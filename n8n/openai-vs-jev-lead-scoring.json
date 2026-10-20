@@ -1,0 +1,324 @@
+{
+  "name": "Score a lead list with OpenAI and JEV side by side",
+  "nodes": [
+    {
+      "id": "2c6a838b-ccf6-5f33-a801-6fa724057133",
+      "name": "Template overview",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -760,
+        -300
+      ],
+      "parameters": {
+        "color": 7,
+        "width": 520,
+        "height": 820,
+        "content": "## Score a lead list with OpenAI and JEV side by side\n\n**Who it's for:** anyone choosing a decision model for lead scoring who wants to test both on their own leads before deciding.\n\n**What it does:** reads every row of a Google Sheet, sends the same input (your ICP + the lead) to the OpenAI Decisions API and to Typesafe's JEV, and writes both scores, both fit levels and a \"Same level\" column back to the row.\n\n### How to set up\n1. Make a Google Sheet with the columns: LinkedIn URL, Job title, Company, Company industry, Company employees, Company location, Company description. An Evaboot export has all of them.\n2. Add credentials: **Google Sheets**, **OpenAI**, and **Header Auth** for JEV (name `Authorization`, value `Bearer YOUR_JEV_KEY`).\n3. Fill in **Your settings**: the sheet URL (copied while the right tab is open, so it ends with `gid=`) and your ICP.\n4. Click **Execute workflow**. Each row gets OpenAI score, OpenAI fit, JEV score, JEV fit and Same level.\n\n### Requirements\nAn OpenAI API key, a Typesafe JEV key (early access), a Google account.\n\n### How to customize\nChange the four fit levels in both scoring nodes. For accuracy, speed, consistency and cost over several runs, use the Python benchmark: github.com/evaboot-labs/OpenAI-Decisions-vs-JEV"
+      }
+    },
+    {
+      "id": "a060204b-d862-543e-9349-9c91cc7e8aeb",
+      "name": "Step 1",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -180,
+        -120
+      ],
+      "parameters": {
+        "color": 7,
+        "width": 900,
+        "height": 420,
+        "content": "### 1. Read the leads\nYour settings holds the sheet URL and your ICP. Every row of the sheet is one lead."
+      }
+    },
+    {
+      "id": "ccde80e2-d588-553e-a684-836e582b9ca3",
+      "name": "Step 2",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        760,
+        -120
+      ],
+      "parameters": {
+        "color": 7,
+        "width": 1300,
+        "height": 420,
+        "content": "### 2. Ask both models the same question\nThe same input goes to OpenAI and to JEV, with the same four levels. The scores are stored side by side, and the row is updated in place, matched on LinkedIn URL."
+      }
+    },
+    {
+      "id": "13da4147-2a30-597d-9aae-214682258340",
+      "name": "Test run",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -140,
+        40
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "741bc4b5-1f61-5c35-9bd1-38692c1d1229",
+      "name": "Your settings",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        60,
+        40
+      ],
+      "parameters": {
+        "mode": "manual",
+        "assignments": {
+          "assignments": [
+            {
+              "id": "sheet",
+              "name": "sheetUrl",
+              "type": "string",
+              "value": "https://docs.google.com/spreadsheets/d/REPLACE_WITH_YOUR_SHEET_ID/edit#gid=0"
+            },
+            {
+              "id": "icp",
+              "name": "icp",
+              "type": "string",
+              "value": "# Ideal customer profile\n\n<!--\nReplace every line below with your own profile. Keep it short and concrete:\nthe model reads this whole file for every lead.\nWrite each criterion so a stranger could answer yes or no from a LinkedIn profile.\n-->\n\n## Company must-haves\n\n- Industry: B2B software (SaaS), IT services, or recruiting agencies.\n- Size: 11 to 500 employees.\n- Location: Europe or North America.\n- Sells to other businesses, with an outbound sales team.\n\n## Buyer must-haves\n\n- Function: Sales, Business Development, Growth, or Revenue Operations.\n- Seniority: Head of, Director, VP, C-level, or Founder.\n\n## Positive signals (raise the fit, not required)\n\n- Job title mentions outbound, prospecting, lead generation, or SDR team.\n- Company is hiring SDRs or BDRs.\n- Lead uses LinkedIn Sales Navigator.\n\n## Disqualifiers (always No fit)\n\n- Students, interns, job seekers, or freelancers with no team.\n- Competitors: lead-data or email-finder vendors.\n- Company with more than 5,000 employees.\n- Government, education, or non-profit organizations.\n"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "executeOnce": true
+    },
+    {
+      "id": "3083fcb3-22b6-5d97-b965-b1d5739f9d98",
+      "name": "Read the leads",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        280,
+        40
+      ],
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "mode": "url",
+          "value": "={{ $('Your settings').first().json.sheetUrl }}"
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "url",
+          "value": "={{ $('Your settings').first().json.sheetUrl }}"
+        },
+        "options": {}
+      },
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "",
+          "name": "Google Sheets"
+        }
+      }
+    },
+    {
+      "id": "8614a7ac-a775-51b1-b8c3-a15a5351445f",
+      "name": "Build the input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        500,
+        40
+      ],
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// The same text goes to both models: your ICP, then the lead.\nconst keys = ['Job title', 'Company', 'Company industry', 'Company employees', 'Company location', 'Company description'];\nconst lead = keys.map(k => `${k}: ${$json[k] || 'unknown'}`).join('\\n');\nreturn { ...$json, decisionInput: `Ideal customer profile:\\n${$('Your settings').first().json.icp}\\n\\nLead:\\n${lead}` };"
+      }
+    },
+    {
+      "id": "be9c3340-a520-5119-8089-96884220ad09",
+      "name": "Ask OpenAI Decisions",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        820,
+        40
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/decisions",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "openAiApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({\n  model: 'gpt-6-luna',\n  input: $json.decisionInput,\n  questions: [{ type: 'score', name: 'icp_fit', instructions: 'How well does this lead match the ideal customer profile?',\n    levels: [{'label': 'No fit', 'description': 'Fails a disqualifier, or matches none of the must-haves.'}, {'label': 'Weak fit', 'description': 'Matches one must-have. The other must-haves fail or are unknown.'}, {'label': 'Partial fit', 'description': 'Matches most must-haves, but one fails or is unknown.'}, {'label': 'Strong fit', 'description': 'Matches every must-have and no disqualifier.'}] }]\n}) }}",
+        "options": {}
+      },
+      "credentials": {
+        "openAiApi": {
+          "id": "",
+          "name": "OpenAI"
+        }
+      }
+    },
+    {
+      "id": "1033e840-2e1b-593f-9717-6eafbe7c5cb2",
+      "name": "Ask JEV",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1040,
+        40
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.typesafe.ai/v1/systemone",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({\n  model: 'jev-latest',\n  state: $('Build the input').item.json.decisionInput,\n  questions: { icp_fit: { type: 'score', instructions: 'How well does this lead match the ideal customer profile?',\n    criteria: ['No fit: Fails a disqualifier, or matches none of the must-haves.', 'Weak fit: Matches one must-have. The other must-haves fail or are unknown.', 'Partial fit: Matches most must-haves, but one fails or is unknown.', 'Strong fit: Matches every must-have and no disqualifier.'] } }\n}) }}",
+        "options": {}
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "",
+          "name": "Typesafe JEV API key"
+        }
+      }
+    },
+    {
+      "id": "33369991-f338-522a-a77e-4ea15d90a7f3",
+      "name": "Compare the answers",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1260,
+        40
+      ],
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// Both answers are a score from 0 to 3. Store the score out of 100 and the nearest level.\nconst levels = ['No fit', 'Weak fit', 'Partial fit', 'Strong fit'];\nconst row = $('Build the input').item.json;\nconst openai = $('Ask OpenAI Decisions').item.json.answers[0];\nconst jev = $json.answers.icp_fit;\nconst out = { ...row };\ndelete out.decisionInput;\nout['OpenAI score'] = Math.round(openai.score / 3 * 100);\nout['OpenAI fit'] = levels[Math.round(openai.score)];\nout['JEV score'] = Math.round(jev.score / 3 * 100);\nout['JEV fit'] = levels[Math.round(jev.score)];\nout['Same level'] = out['OpenAI fit'] === out['JEV fit'] ? 'yes' : 'no';\nreturn out;"
+      }
+    },
+    {
+      "id": "55b5ad74-dbba-5dea-997b-f5b7664ef86b",
+      "name": "Write both scores",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1480,
+        40
+      ],
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "mode": "url",
+          "value": "={{ $('Your settings').first().json.sheetUrl }}"
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "url",
+          "value": "={{ $('Your settings').first().json.sheetUrl }}"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [
+            "LinkedIn URL"
+          ],
+          "schema": []
+        },
+        "options": {}
+      },
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "",
+          "name": "Google Sheets"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Test run": {
+      "main": [
+        [
+          {
+            "node": "Your settings",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Your settings": {
+      "main": [
+        [
+          {
+            "node": "Read the leads",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read the leads": {
+      "main": [
+        [
+          {
+            "node": "Build the input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build the input": {
+      "main": [
+        [
+          {
+            "node": "Ask OpenAI Decisions",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ask OpenAI Decisions": {
+      "main": [
+        [
+          {
+            "node": "Ask JEV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ask JEV": {
+      "main": [
+        [
+          {
+            "node": "Compare the answers",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Compare the answers": {
+      "main": [
+        [
+          {
+            "node": "Write both scores",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}
