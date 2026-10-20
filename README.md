@@ -23,9 +23,9 @@ Full tables, per-label accuracy and confusion matrices: [`report.md`](report.md)
 
 | | OpenAI | JEV |
 |---|---|---|
-| Exact level (vs our labels) | 39% | 72% |
-| Within one level | 88% | 96% |
-| Mean error (levels 0 to 3) | 0.74 | 0.42 |
+| Exact level (vs our labels) | 41% | 73% |
+| Within one level | 90% | 97% |
+| Mean error (levels 0 to 3) | 0.71 | 0.41 |
 | Leads that changed level between runs | 0% | 7% |
 | Median response time | 0.26 s | 0.27 s |
 | Input tokens per lead | 596 | 816 |
@@ -35,8 +35,8 @@ What it means:
 
 - **Both rank leads the same way.** Spearman correlation with our labels is 0.83 for both,
   and 0.95 between the two models. If you sort by score and take the top, either works.
-- **OpenAI is one level stricter.** It put 31 of 34 "Weak fit" leads in "No fit", and 28 of
-  61 "Strong fit" leads in "Partial fit". If you filter on the level name, this matters.
+- **OpenAI is one level stricter.** It put 32 of 37 "Weak fit" leads in "No fit", and 28 of
+  60 "Strong fit" leads in "Partial fit". If you filter on the level name, this matters.
 - **OpenAI is deterministic.** Same lead, same answer, every run. JEV moved 7% of leads by one
   level between runs.
 - **JEV is cheaper per lead**, but it is early access only.

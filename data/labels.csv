@@ -1,7 +1,7 @@
 id,label,reason
 L001,Weak fit,"fails or unknown: industry (no), seniority (no)"
-L002,Strong fit,all six must-haves
-L003,Partial fit,fails or unknown: size (no)
+L002,Weak fit,"fails or unknown: function (no), seniority (no)"
+L003,Weak fit,"fails or unknown: size (no), function (no)"
 L004,No fit,"disqualifier: government, education or non-profit"
 L005,Partial fit,fails or unknown: seniority (no)
 L006,Partial fit,fails or unknown: function (no)
@@ -19,7 +19,7 @@ L017,Strong fit,all six must-haves
 L018,Partial fit,fails or unknown: industry (no)
 L019,Strong fit,all six must-haves
 L020,Strong fit,all six must-haves
-L021,Partial fit,fails or unknown: seniority (no)
+L021,Weak fit,"fails or unknown: function (no), seniority (no)"
 L022,Strong fit,all six must-haves
 L023,Partial fit,fails or unknown: industry (no)
 L024,Weak fit,"fails or unknown: industry (no), size (no)"

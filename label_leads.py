@@ -47,7 +47,9 @@ def employees(row):
 
 
 def checks(row):
-    title, industry = row["Job title"], (row["Company industry"] or "").lower()
+    # "Product owner" is a product role, not a business owner.
+    title = re.sub(r"product owner", "product role", row["Job title"], flags=re.I)
+    industry = (row["Company industry"] or "").lower()
     location = (row["Company location"] or "").lower()
     size = employees(row)
     sales = (row["Sales team size"] or "").strip()
@@ -57,7 +59,9 @@ def checks(row):
         "location": None if not location else any(c in location for c in EUROPE + NORTH_AMERICA),
         "outbound team": None if not sales.isdigit() else int(sales) >= 3,
         # Founders and CEOs own sales in an 11-500 company, and ICP.md names Founder as a buyer.
-        "function": bool(FUNCTION.search(title) or re.search(r"\b(founder|co-founder|cofounder|ceo|owner)\b", title, re.I)),
+        # Sales engineers are pre-sales technical staff, not the sales function.
+        "function": not re.search(r"engineer", title, re.I) and bool(
+            FUNCTION.search(title) or re.search(r"\b(founder|co-founder|cofounder|ceo|owner)\b", title, re.I)),
         "seniority": bool(SENIOR.search(title)),
     }
     disqualifiers = []
