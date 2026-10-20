@@ -1,53 +1,53 @@
 id,label,reason
-L001,Weak fit,"fails or unknown: industry (no), seniority (no)"
-L002,Weak fit,"fails or unknown: function (no), seniority (no)"
-L003,Weak fit,"fails or unknown: size (no), function (no)"
-L004,No fit,"disqualifier: government, education or non-profit"
-L005,Partial fit,fails or unknown: seniority (no)
-L006,Partial fit,fails or unknown: function (no)
-L007,Strong fit,all six must-haves
+L001,Strong fit,all six must-haves
+L002,Strong fit,all six must-haves
+L003,Partial fit,fails or unknown: function (no)
+L004,Strong fit,all six must-haves
+L005,Strong fit,all six must-haves
+L006,Strong fit,all six must-haves
+L007,Weak fit,"fails or unknown: industry (no), function (no)"
 L008,Strong fit,all six must-haves
-L009,Partial fit,fails or unknown: industry (no)
-L010,Weak fit,"fails or unknown: size (no), seniority (no)"
+L009,Strong fit,all six must-haves
+L010,Strong fit,all six must-haves
 L011,Strong fit,all six must-haves
-L012,Partial fit,fails or unknown: function (no)
-L013,Strong fit,all six must-haves
+L012,Weak fit,"fails or unknown: outbound team (no), seniority (no)"
+L013,Weak fit,"fails or unknown: size (no), outbound team (unknown)"
 L014,Strong fit,all six must-haves
-L015,Strong fit,all six must-haves
+L015,Weak fit,"fails or unknown: industry (no), size (no), location (unknown), outbound team (unknown)"
 L016,Partial fit,fails or unknown: industry (no)
 L017,Strong fit,all six must-haves
-L018,Partial fit,fails or unknown: industry (no)
-L019,Strong fit,all six must-haves
+L018,Weak fit,"fails or unknown: location (unknown), outbound team (no), function (no), seniority (no)"
+L019,Partial fit,fails or unknown: function (no)
 L020,Strong fit,all six must-haves
-L021,Weak fit,"fails or unknown: function (no), seniority (no)"
+L021,No fit,"disqualifier: more than 5,000 employees"
 L022,Strong fit,all six must-haves
-L023,Partial fit,fails or unknown: industry (no)
-L024,Weak fit,"fails or unknown: industry (no), size (no)"
-L025,Partial fit,fails or unknown: industry (no)
+L023,Partial fit,fails or unknown: function (no)
+L024,Partial fit,fails or unknown: function (no)
+L025,Partial fit,fails or unknown: outbound team (no)
 L026,Strong fit,all six must-haves
 L027,Strong fit,all six must-haves
-L028,Strong fit,all six must-haves
+L028,No fit,disqualifier: lead-data or outbound vendor (competitor)
 L029,Strong fit,all six must-haves
 L030,Strong fit,all six must-haves
-L031,Partial fit,fails or unknown: industry (no)
+L031,Strong fit,all six must-haves
 L032,Strong fit,all six must-haves
-L033,Partial fit,fails or unknown: function (no)
-L034,Partial fit,fails or unknown: size (no)
+L033,Strong fit,all six must-haves
+L034,Strong fit,all six must-haves
 L035,Partial fit,fails or unknown: outbound team (no)
-L036,Partial fit,fails or unknown: function (no)
-L037,Strong fit,all six must-haves
+L036,Partial fit,fails or unknown: outbound team (unknown)
+L037,Partial fit,fails or unknown: function (no)
 L038,Strong fit,all six must-haves
-L039,Partial fit,"override: title says Revenue Cloud (a product name); the role is solution engineering, not sales, so function fails"
-L040,No fit,disqualifier: lead-data or outbound vendor (competitor)
+L039,Weak fit,"fails or unknown: function (no), seniority (no)"
+L040,Strong fit,all six must-haves
 L041,Strong fit,all six must-haves
 L042,Strong fit,all six must-haves
-L043,Partial fit,fails or unknown: industry (no)
-L044,Partial fit,fails or unknown: outbound team (no)
-L045,Strong fit,all six must-haves
-L046,Strong fit,all six must-haves
-L047,Partial fit,fails or unknown: function (no)
-L048,Strong fit,all six must-haves
-L049,No fit,disqualifier: lead-data or outbound vendor (competitor)
+L043,Weak fit,"fails or unknown: size (no), outbound team (unknown)"
+L044,Strong fit,all six must-haves
+L045,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L046,Partial fit,fails or unknown: outbound team (no)
+L047,Strong fit,all six must-haves
+L048,Weak fit,"fails or unknown: function (no), seniority (no)"
+L049,Strong fit,all six must-haves
 L050,Strong fit,all six must-haves
 L051,Strong fit,all six must-haves
 L052,Strong fit,all six must-haves
@@ -55,94 +55,945 @@ L053,Strong fit,all six must-haves
 L054,Strong fit,all six must-haves
 L055,Strong fit,all six must-haves
 L056,Strong fit,all six must-haves
-L057,Strong fit,all six must-haves
-L058,Weak fit,"fails or unknown: outbound team (no), function (no)"
+L057,Partial fit,fails or unknown: function (no)
+L058,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown)"
 L059,Strong fit,all six must-haves
-L060,No fit,disqualifier: lead-data or outbound vendor (competitor)
-L061,Strong fit,all six must-haves
+L060,Strong fit,all six must-haves
+L061,Partial fit,fails or unknown: industry (no)
 L062,Strong fit,all six must-haves
-L063,Partial fit,fails or unknown: industry (no)
+L063,Partial fit,fails or unknown: location (no)
 L064,Strong fit,all six must-haves
-L065,No fit,disqualifier: lead-data or outbound vendor (competitor)
-L066,Strong fit,all six must-haves
+L065,Partial fit,fails or unknown: industry (no)
+L066,Partial fit,fails or unknown: function (no)
 L067,Strong fit,all six must-haves
 L068,Strong fit,all six must-haves
 L069,Strong fit,all six must-haves
 L070,Strong fit,all six must-haves
 L071,Strong fit,all six must-haves
 L072,Strong fit,all six must-haves
-L073,Strong fit,all six must-haves
-L074,Strong fit,all six must-haves
-L075,Strong fit,all six must-haves
-L076,Partial fit,fails or unknown: function (no)
-L077,Partial fit,fails or unknown: industry (no)
+L073,Partial fit,fails or unknown: function (no)
+L074,Weak fit,"fails or unknown: function (no), seniority (no)"
+L075,Partial fit,fails or unknown: outbound team (unknown)
+L076,Strong fit,all six must-haves
+L077,No fit,"disqualifier: government, education or non-profit"
 L078,Strong fit,all six must-haves
-L079,Strong fit,all six must-haves
+L079,Weak fit,"fails or unknown: outbound team (unknown), function (no)"
 L080,Strong fit,all six must-haves
-L081,Strong fit,all six must-haves
+L081,Partial fit,fails or unknown: function (no)
 L082,Strong fit,all six must-haves
 L083,Strong fit,all six must-haves
 L084,Strong fit,all six must-haves
 L085,Strong fit,all six must-haves
-L086,No fit,"disqualifier: more than 5,000 employees"
-L087,Strong fit,all six must-haves
-L088,Weak fit,"fails or unknown: industry (no), outbound team (no)"
-L089,No fit,"disqualifier: more than 5,000 employees"
-L090,No fit,"disqualifier: more than 5,000 employees"
-L091,No fit,"disqualifier: more than 5,000 employees"
-L092,Weak fit,"fails or unknown: industry (no), outbound team (unknown), function (no)"
-L093,Weak fit,"fails or unknown: size (no), function (no)"
-L094,No fit,"disqualifier: more than 5,000 employees"
-L095,Weak fit,"fails or unknown: industry (no), size (no), function (no), seniority (no)"
-L096,Weak fit,"fails or unknown: industry (no), size (no), function (no), seniority (no)"
-L097,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no), function (no), seniority (no)"
-L098,Weak fit,"fails or unknown: size (no), function (no), seniority (no)"
-L099,No fit,"disqualifier: more than 5,000 employees"
-L100,No fit,"disqualifier: more than 5,000 employees"
-L101,Weak fit,"fails or unknown: industry (no), size (no), seniority (no)"
-L102,No fit,"disqualifier: more than 5,000 employees"
-L103,No fit,"disqualifier: more than 5,000 employees"
-L104,Weak fit,"fails or unknown: industry (no), function (no), seniority (no)"
-L105,No fit,"disqualifier: more than 5,000 employees"
-L106,Weak fit,"fails or unknown: industry (no), outbound team (no), function (no)"
-L107,No fit,"disqualifier: more than 5,000 employees"
-L108,Partial fit,fails or unknown: function (no)
-L109,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
-L110,Weak fit,"fails or unknown: industry (no), size (no)"
-L111,Weak fit,"fails or unknown: industry (unknown), size (no), location (unknown), outbound team (unknown), function (no)"
-L112,Weak fit,"fails or unknown: industry (no), outbound team (no), function (no)"
-L113,No fit,"disqualifier: more than 5,000 employees"
-L114,Weak fit,"fails or unknown: industry (no), size (no), function (no)"
-L115,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no), function (no), seniority (no)"
-L116,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no)"
-L117,No fit,"disqualifier: more than 5,000 employees"
-L118,No fit,"disqualifier: more than 5,000 employees"
-L119,Weak fit,"fails or unknown: size (no), function (no)"
-L120,No fit,"disqualifier: more than 5,000 employees"
-L121,No fit,"disqualifier: more than 5,000 employees"
-L122,Weak fit,"fails or unknown: industry (no), size (no)"
-L123,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
-L124,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no), seniority (no)"
-L125,Weak fit,"fails or unknown: industry (no), size (no), function (no)"
-L126,Weak fit,"fails or unknown: industry (no), size (no), seniority (no)"
-L127,Weak fit,"fails or unknown: function (no), seniority (no)"
-L128,No fit,"disqualifier: more than 5,000 employees"
-L129,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no), seniority (no)"
-L130,Weak fit,"fails or unknown: industry (no), size (no), function (no)"
-L131,Partial fit,fails or unknown: industry (no)
-L132,Weak fit,"fails or unknown: industry (no), outbound team (no), function (no)"
-L133,Weak fit,"fails or unknown: industry (no), outbound team (unknown), function (no)"
-L134,Weak fit,"fails or unknown: industry (no), size (no), seniority (no)"
-L135,No fit,"disqualifier: more than 5,000 employees"
-L136,No fit,"disqualifier: more than 5,000 employees"
-L137,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
-L138,No fit,"disqualifier: student, intern, job seeker or freelancer"
-L139,Strong fit,all six must-haves
-L140,Strong fit,all six must-haves
+L086,Partial fit,fails or unknown: function (no)
+L087,Weak fit,"fails or unknown: size (no), location (unknown), outbound team (no), function (no)"
+L088,Strong fit,all six must-haves
+L089,Strong fit,all six must-haves
+L090,Partial fit,fails or unknown: function (no)
+L091,Strong fit,all six must-haves
+L092,No fit,"disqualifier: more than 5,000 employees"
+L093,Strong fit,all six must-haves
+L094,Strong fit,all six must-haves
+L095,Weak fit,"fails or unknown: location (no), outbound team (no)"
+L096,Partial fit,fails or unknown: function (no)
+L097,Strong fit,all six must-haves
+L098,Strong fit,all six must-haves
+L099,No fit,disqualifier: lead-data or outbound vendor (competitor)
+L100,Strong fit,all six must-haves
+L101,Partial fit,fails or unknown: function (no)
+L102,Strong fit,all six must-haves
+L103,Strong fit,all six must-haves
+L104,Partial fit,fails or unknown: function (no)
+L105,Strong fit,all six must-haves
+L106,Strong fit,all six must-haves
+L107,Strong fit,all six must-haves
+L108,Weak fit,"fails or unknown: industry (no), function (no)"
+L109,Strong fit,all six must-haves
+L110,Partial fit,fails or unknown: function (no)
+L111,Strong fit,all six must-haves
+L112,Strong fit,all six must-haves
+L113,Partial fit,fails or unknown: outbound team (no)
+L114,Strong fit,all six must-haves
+L115,Strong fit,all six must-haves
+L116,Strong fit,all six must-haves
+L117,No fit,"disqualifier: government, education or non-profit"
+L118,Partial fit,fails or unknown: outbound team (unknown)
+L119,Strong fit,all six must-haves
+L120,Strong fit,all six must-haves
+L121,Partial fit,fails or unknown: seniority (no)
+L122,Weak fit,"fails or unknown: industry (no), size (no), location (no), outbound team (unknown), function (no)"
+L123,Weak fit,"fails or unknown: location (no), outbound team (no)"
+L124,Strong fit,all six must-haves
+L125,Strong fit,all six must-haves
+L126,Partial fit,fails or unknown: function (no)
+L127,Partial fit,fails or unknown: outbound team (no)
+L128,Strong fit,all six must-haves
+L129,Strong fit,all six must-haves
+L130,Strong fit,all six must-haves
+L131,Strong fit,all six must-haves
+L132,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown), function (no), seniority (no)"
+L133,Strong fit,all six must-haves
+L134,Strong fit,all six must-haves
+L135,Strong fit,all six must-haves
+L136,Strong fit,all six must-haves
+L137,Strong fit,all six must-haves
+L138,Strong fit,all six must-haves
+L139,Partial fit,fails or unknown: industry (no)
+L140,No fit,"disqualifier: more than 5,000 employees"
 L141,Strong fit,all six must-haves
-L142,Partial fit,fails or unknown: industry (no)
+L142,Strong fit,all six must-haves
 L143,Strong fit,all six must-haves
 L144,Strong fit,all six must-haves
-L145,Partial fit,fails or unknown: size (no)
-L146,Strong fit,all six must-haves
-L147,Partial fit,fails or unknown: size (no)
+L145,Weak fit,"fails or unknown: size (no), outbound team (unknown)"
+L146,Weak fit,"fails or unknown: industry (no), size (no), location (unknown), outbound team (unknown)"
+L147,Strong fit,all six must-haves
+L148,Weak fit,"fails or unknown: size (no), outbound team (unknown)"
+L149,Weak fit,"fails or unknown: industry (no), size (no), location (unknown), outbound team (unknown), function (no)"
+L150,Strong fit,all six must-haves
+L151,Weak fit,"fails or unknown: industry (no), outbound team (unknown)"
+L152,Weak fit,"fails or unknown: industry (no), size (no)"
+L153,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no)"
+L154,Partial fit,fails or unknown: industry (no)
+L155,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L156,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L157,Partial fit,fails or unknown: industry (no)
+L158,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L159,Weak fit,"fails or unknown: industry (no), outbound team (unknown)"
+L160,No fit,"disqualifier: government, education or non-profit"
+L161,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L162,Weak fit,"fails or unknown: industry (no), location (no), outbound team (no)"
+L163,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no), function (no)"
+L164,Weak fit,"fails or unknown: industry (no), seniority (no)"
+L165,Partial fit,fails or unknown: industry (no)
+L166,Partial fit,fails or unknown: industry (no)
+L167,Weak fit,"fails or unknown: industry (no), size (no), location (unknown), outbound team (unknown)"
+L168,Weak fit,"fails or unknown: industry (no), outbound team (no)"
+L169,Weak fit,"fails or unknown: industry (no), function (no)"
+L170,Partial fit,fails or unknown: industry (no)
+L171,Partial fit,fails or unknown: industry (no)
+L172,Weak fit,"fails or unknown: size (no), outbound team (no)"
+L173,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown), function (no)"
+L174,Weak fit,"fails or unknown: industry (no), outbound team (unknown)"
+L175,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no)"
+L176,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L177,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown), seniority (no)"
+L178,Weak fit,"fails or unknown: industry (no), outbound team (no)"
+L179,Weak fit,"fails or unknown: industry (no), function (no), seniority (no)"
+L180,Weak fit,"fails or unknown: industry (no), outbound team (unknown)"
+L181,Weak fit,"fails or unknown: industry (no), location (unknown)"
+L182,Partial fit,fails or unknown: industry (no)
+L183,Weak fit,"fails or unknown: industry (no), outbound team (unknown)"
+L184,Weak fit,"fails or unknown: industry (no), seniority (no)"
+L185,Partial fit,fails or unknown: industry (no)
+L186,Weak fit,"fails or unknown: industry (no), size (no), location (unknown), outbound team (unknown)"
+L187,Weak fit,"fails or unknown: industry (no), size (no), seniority (no)"
+L188,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L189,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown), function (no), seniority (no)"
+L190,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L191,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown), function (no)"
+L192,Weak fit,"fails or unknown: industry (no), outbound team (no)"
+L193,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L194,Weak fit,"fails or unknown: industry (no), location (unknown)"
+L195,Weak fit,"fails or unknown: industry (no), seniority (no)"
+L196,Weak fit,"fails or unknown: industry (no), outbound team (no)"
+L197,Weak fit,"fails or unknown: industry (no), location (unknown)"
+L198,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no)"
+L199,Partial fit,fails or unknown: industry (no)
+L200,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no)"
+L201,Weak fit,"fails or unknown: industry (no), location (no), outbound team (unknown)"
+L202,Partial fit,fails or unknown: industry (no)
+L203,Partial fit,fails or unknown: industry (no)
+L204,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown)"
+L205,Partial fit,fails or unknown: industry (no)
+L206,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown)"
+L207,Partial fit,fails or unknown: industry (no)
+L208,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown)"
+L209,Weak fit,"fails or unknown: industry (no), location (unknown), outbound team (unknown)"
+L210,Partial fit,fails or unknown: industry (no)
+L211,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown), seniority (no)"
+L212,Partial fit,fails or unknown: industry (no)
+L213,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown)"
+L214,Partial fit,fails or unknown: industry (no)
+L215,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L216,Weak fit,"fails or unknown: industry (no), outbound team (no)"
+L217,Weak fit,"fails or unknown: industry (no), location (unknown), outbound team (unknown)"
+L218,Partial fit,fails or unknown: industry (no)
+L219,Partial fit,fails or unknown: industry (no)
+L220,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L221,Partial fit,fails or unknown: industry (no)
+L222,Partial fit,fails or unknown: industry (no)
+L223,Partial fit,fails or unknown: industry (no)
+L224,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no)"
+L225,Partial fit,fails or unknown: outbound team (no)
+L226,Partial fit,fails or unknown: industry (no)
+L227,Partial fit,fails or unknown: industry (no)
+L228,Partial fit,fails or unknown: industry (no)
+L229,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L230,Weak fit,"fails or unknown: industry (no), function (no), seniority (no)"
+L231,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown)"
+L232,Partial fit,fails or unknown: industry (no)
+L233,Partial fit,fails or unknown: industry (no)
+L234,Strong fit,all six must-haves
+L235,Partial fit,fails or unknown: industry (no)
+L236,Weak fit,"fails or unknown: industry (no), outbound team (no)"
+L237,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no)"
+L238,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown), function (no)"
+L239,Weak fit,"fails or unknown: industry (no), outbound team (unknown)"
+L240,Partial fit,fails or unknown: seniority (no)
+L241,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L242,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no)"
+L243,No fit,"disqualifier: government, education or non-profit"
+L244,Weak fit,"fails or unknown: industry (no), outbound team (no)"
+L245,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L246,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown)"
+L247,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no)"
+L248,Weak fit,"fails or unknown: size (no), location (unknown), outbound team (unknown), function (no)"
+L249,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L250,Weak fit,"fails or unknown: industry (no), outbound team (unknown)"
+L251,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no)"
+L252,Weak fit,"fails or unknown: industry (no), size (no), location (unknown), outbound team (unknown), function (no)"
+L253,Partial fit,fails or unknown: industry (no)
+L254,Partial fit,fails or unknown: industry (no)
+L255,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown), function (no), seniority (no)"
+L256,Weak fit,"fails or unknown: industry (no), size (no), location (unknown), function (no), seniority (no)"
+L257,Weak fit,"fails or unknown: industry (no), outbound team (no)"
+L258,Weak fit,"fails or unknown: industry (no), outbound team (no), function (no)"
+L259,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L260,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L261,Partial fit,fails or unknown: industry (no)
+L262,Weak fit,"fails or unknown: industry (no), size (no), location (unknown), outbound team (unknown)"
+L263,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L264,Weak fit,"fails or unknown: industry (no), outbound team (unknown), function (no), seniority (no)"
+L265,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown), function (no)"
+L266,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown), function (no)"
+L267,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown), seniority (no)"
+L268,Partial fit,fails or unknown: industry (no)
+L269,Weak fit,"fails or unknown: industry (no), size (no), location (unknown), outbound team (no)"
+L270,Weak fit,"fails or unknown: industry (no), location (no)"
+L271,Partial fit,fails or unknown: seniority (no)
+L272,Partial fit,fails or unknown: seniority (no)
+L273,Weak fit,"fails or unknown: outbound team (unknown), seniority (no)"
+L274,Partial fit,fails or unknown: seniority (no)
+L275,Partial fit,fails or unknown: seniority (no)
+L276,Partial fit,fails or unknown: seniority (no)
+L277,Partial fit,fails or unknown: seniority (no)
+L278,Partial fit,fails or unknown: seniority (no)
+L279,Strong fit,all six must-haves
+L280,Strong fit,all six must-haves
+L281,Partial fit,fails or unknown: seniority (no)
+L282,Partial fit,fails or unknown: seniority (no)
+L283,Weak fit,"fails or unknown: outbound team (no), seniority (no)"
+L284,No fit,"disqualifier: more than 5,000 employees"
+L285,Partial fit,fails or unknown: seniority (no)
+L286,Partial fit,fails or unknown: seniority (no)
+L287,Weak fit,"fails or unknown: outbound team (no), seniority (no)"
+L288,Partial fit,fails or unknown: outbound team (no)
+L289,Weak fit,"fails or unknown: size (no), outbound team (unknown), seniority (no)"
+L290,Strong fit,all six must-haves
+L291,Partial fit,fails or unknown: seniority (no)
+L292,Partial fit,fails or unknown: seniority (no)
+L293,Strong fit,all six must-haves
+L294,Partial fit,fails or unknown: outbound team (no)
+L295,Partial fit,fails or unknown: seniority (no)
+L296,Weak fit,"fails or unknown: outbound team (unknown), seniority (no)"
+L297,Partial fit,fails or unknown: seniority (no)
+L298,Strong fit,all six must-haves
+L299,Partial fit,fails or unknown: seniority (no)
+L300,Partial fit,fails or unknown: seniority (no)
+L301,Partial fit,fails or unknown: seniority (no)
+L302,Strong fit,all six must-haves
+L303,Partial fit,fails or unknown: seniority (no)
+L304,Partial fit,fails or unknown: seniority (no)
+L305,Partial fit,fails or unknown: seniority (no)
+L306,Partial fit,fails or unknown: seniority (no)
+L307,Strong fit,all six must-haves
+L308,Strong fit,all six must-haves
+L309,Partial fit,fails or unknown: seniority (no)
+L310,Strong fit,all six must-haves
+L311,Strong fit,all six must-haves
+L312,Partial fit,fails or unknown: seniority (no)
+L313,Partial fit,fails or unknown: seniority (no)
+L314,Partial fit,fails or unknown: seniority (no)
+L315,Partial fit,fails or unknown: seniority (no)
+L316,Partial fit,fails or unknown: seniority (no)
+L317,Partial fit,fails or unknown: seniority (no)
+L318,Partial fit,fails or unknown: seniority (no)
+L319,Partial fit,fails or unknown: seniority (no)
+L320,Partial fit,fails or unknown: seniority (no)
+L321,Partial fit,fails or unknown: seniority (no)
+L322,Partial fit,fails or unknown: seniority (no)
+L323,Partial fit,fails or unknown: seniority (no)
+L324,Partial fit,fails or unknown: seniority (no)
+L325,Strong fit,all six must-haves
+L326,Weak fit,"fails or unknown: size (no), seniority (no)"
+L327,Partial fit,fails or unknown: seniority (no)
+L328,Partial fit,fails or unknown: seniority (no)
+L329,Strong fit,all six must-haves
+L330,Strong fit,all six must-haves
+L331,Partial fit,fails or unknown: seniority (no)
+L332,Partial fit,fails or unknown: seniority (no)
+L333,Partial fit,fails or unknown: industry (no)
+L334,Partial fit,fails or unknown: seniority (no)
+L335,Partial fit,fails or unknown: seniority (no)
+L336,Partial fit,fails or unknown: seniority (no)
+L337,Partial fit,fails or unknown: seniority (no)
+L338,Partial fit,fails or unknown: seniority (no)
+L339,Partial fit,fails or unknown: seniority (no)
+L340,Weak fit,"fails or unknown: outbound team (no), seniority (no)"
+L341,Partial fit,fails or unknown: seniority (no)
+L342,Strong fit,all six must-haves
+L343,Partial fit,fails or unknown: seniority (no)
+L344,Strong fit,all six must-haves
+L345,Strong fit,all six must-haves
+L346,Partial fit,fails or unknown: seniority (no)
+L347,Partial fit,fails or unknown: seniority (no)
+L348,Partial fit,fails or unknown: seniority (no)
+L349,Partial fit,fails or unknown: seniority (no)
+L350,Partial fit,fails or unknown: seniority (no)
+L351,Partial fit,fails or unknown: seniority (no)
+L352,Partial fit,fails or unknown: seniority (no)
+L353,Strong fit,all six must-haves
+L354,Strong fit,all six must-haves
+L355,Partial fit,fails or unknown: seniority (no)
+L356,Partial fit,fails or unknown: seniority (no)
+L357,Strong fit,all six must-haves
+L358,Weak fit,"fails or unknown: outbound team (no), seniority (no)"
+L359,Weak fit,"fails or unknown: size (no), seniority (no)"
+L360,Strong fit,all six must-haves
+L361,Partial fit,fails or unknown: seniority (no)
+L362,Partial fit,fails or unknown: seniority (no)
+L363,Partial fit,fails or unknown: function (no)
+L364,Weak fit,"fails or unknown: function (no), seniority (no)"
+L365,Weak fit,"fails or unknown: outbound team (no), function (no)"
+L366,Weak fit,"fails or unknown: function (no), seniority (no)"
+L367,Weak fit,"fails or unknown: outbound team (no), function (no)"
+L368,Partial fit,fails or unknown: function (no)
+L369,Partial fit,fails or unknown: function (no)
+L370,Partial fit,fails or unknown: function (no)
+L371,Partial fit,fails or unknown: function (no)
+L372,Partial fit,fails or unknown: function (no)
+L373,Weak fit,"fails or unknown: function (no), seniority (no)"
+L374,Weak fit,"fails or unknown: function (no), seniority (no)"
+L375,Partial fit,fails or unknown: function (no)
+L376,Partial fit,fails or unknown: function (no)
+L377,Partial fit,fails or unknown: function (no)
+L378,Partial fit,fails or unknown: function (no)
+L379,Partial fit,fails or unknown: function (no)
+L380,Weak fit,"fails or unknown: function (no), seniority (no)"
+L381,Partial fit,fails or unknown: function (no)
+L382,Partial fit,fails or unknown: function (no)
+L383,Partial fit,fails or unknown: function (no)
+L384,Partial fit,fails or unknown: function (no)
+L385,Partial fit,fails or unknown: function (no)
+L386,Weak fit,"fails or unknown: function (no), seniority (no)"
+L387,Partial fit,fails or unknown: function (no)
+L388,Partial fit,fails or unknown: function (no)
+L389,Strong fit,all six must-haves
+L390,Partial fit,fails or unknown: function (no)
+L391,Partial fit,fails or unknown: function (no)
+L392,Partial fit,fails or unknown: function (no)
+L393,Weak fit,"fails or unknown: function (no), seniority (no)"
+L394,Weak fit,"fails or unknown: industry (no), size (no), location (unknown), outbound team (unknown)"
+L395,Weak fit,"fails or unknown: function (no), seniority (no)"
+L396,Partial fit,fails or unknown: function (no)
+L397,Partial fit,fails or unknown: function (no)
+L398,Weak fit,"fails or unknown: function (no), seniority (no)"
+L399,Partial fit,fails or unknown: function (no)
+L400,Weak fit,"fails or unknown: function (no), seniority (no)"
+L401,Partial fit,fails or unknown: function (no)
+L402,Partial fit,fails or unknown: function (no)
+L403,Weak fit,"fails or unknown: function (no), seniority (no)"
+L404,Weak fit,"fails or unknown: function (no), seniority (no)"
+L405,Partial fit,fails or unknown: function (no)
+L406,Weak fit,"fails or unknown: function (no), seniority (no)"
+L407,Partial fit,fails or unknown: function (no)
+L408,Partial fit,fails or unknown: function (no)
+L409,Weak fit,"fails or unknown: function (no), seniority (no)"
+L410,Weak fit,"fails or unknown: outbound team (unknown), function (no), seniority (no)"
+L411,Partial fit,fails or unknown: function (no)
+L412,Weak fit,"fails or unknown: function (no), seniority (no)"
+L413,Weak fit,"fails or unknown: function (no), seniority (no)"
+L414,Weak fit,"fails or unknown: size (no), location (no), outbound team (unknown)"
+L415,Weak fit,"fails or unknown: function (no), seniority (no)"
+L416,Weak fit,"fails or unknown: function (no), seniority (no)"
+L417,Weak fit,"fails or unknown: outbound team (unknown), function (no)"
+L418,Weak fit,"fails or unknown: function (no), seniority (no)"
+L419,Weak fit,"fails or unknown: function (no), seniority (no)"
+L420,Weak fit,"fails or unknown: function (no), seniority (no)"
+L421,Weak fit,"fails or unknown: function (no), seniority (no)"
+L422,Weak fit,"fails or unknown: function (no), seniority (no)"
+L423,Weak fit,"fails or unknown: industry (no), outbound team (no), function (no)"
+L424,Weak fit,"fails or unknown: function (no), seniority (no)"
+L425,Partial fit,fails or unknown: function (no)
+L426,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown), function (no)"
+L427,Weak fit,"fails or unknown: function (no), seniority (no)"
+L428,Weak fit,"fails or unknown: function (no), seniority (no)"
+L429,Weak fit,"fails or unknown: function (no), seniority (no)"
+L430,Partial fit,fails or unknown: function (no)
+L431,Weak fit,"fails or unknown: function (no), seniority (no)"
+L432,Partial fit,fails or unknown: function (no)
+L433,Weak fit,"fails or unknown: function (no), seniority (no)"
+L434,Partial fit,fails or unknown: function (no)
+L435,Partial fit,fails or unknown: function (no)
+L436,Weak fit,"fails or unknown: function (no), seniority (no)"
+L437,Weak fit,"fails or unknown: outbound team (unknown), function (no), seniority (no)"
+L438,Partial fit,fails or unknown: function (no)
+L439,Weak fit,"fails or unknown: function (no), seniority (no)"
+L440,Partial fit,fails or unknown: function (no)
+L441,Weak fit,"fails or unknown: function (no), seniority (no)"
+L442,Weak fit,"fails or unknown: industry (no), function (no), seniority (no)"
+L443,Partial fit,fails or unknown: function (no)
+L444,Partial fit,fails or unknown: function (no)
+L445,Partial fit,fails or unknown: function (no)
+L446,Weak fit,"fails or unknown: function (no), seniority (no)"
+L447,Partial fit,fails or unknown: function (no)
+L448,Partial fit,fails or unknown: function (no)
+L449,Partial fit,fails or unknown: function (no)
+L450,Weak fit,"fails or unknown: function (no), seniority (no)"
+L451,Partial fit,fails or unknown: function (no)
+L452,Partial fit,fails or unknown: function (no)
+L453,Weak fit,"fails or unknown: function (no), seniority (no)"
+L454,Weak fit,"fails or unknown: industry (no), size (no)"
+L455,Weak fit,"fails or unknown: function (no), seniority (no)"
+L456,Partial fit,fails or unknown: function (no)
+L457,Weak fit,"fails or unknown: function (no), seniority (no)"
+L458,Weak fit,"fails or unknown: function (no), seniority (no)"
+L459,Partial fit,fails or unknown: function (no)
+L460,Partial fit,fails or unknown: function (no)
+L461,Partial fit,fails or unknown: function (no)
+L462,Partial fit,fails or unknown: function (no)
+L463,Partial fit,fails or unknown: function (no)
+L464,Weak fit,"fails or unknown: function (no), seniority (no)"
+L465,Partial fit,fails or unknown: function (no)
+L466,Weak fit,"fails or unknown: function (no), seniority (no)"
+L467,Weak fit,"fails or unknown: function (no), seniority (no)"
+L468,Weak fit,"fails or unknown: function (no), seniority (no)"
+L469,Strong fit,all six must-haves
+L470,Partial fit,fails or unknown: function (no)
+L471,Strong fit,all six must-haves
+L472,Partial fit,fails or unknown: function (no)
+L473,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown), function (no)"
+L474,Partial fit,fails or unknown: function (no)
+L475,Strong fit,all six must-haves
+L476,Partial fit,fails or unknown: function (no)
+L477,Partial fit,fails or unknown: function (no)
+L478,Partial fit,fails or unknown: function (no)
+L479,Partial fit,fails or unknown: function (no)
+L480,Weak fit,"fails or unknown: industry (no), seniority (no)"
+L481,Weak fit,"fails or unknown: function (no), seniority (no)"
+L482,Weak fit,"fails or unknown: size (no), function (no)"
+L483,No fit,"disqualifier: government, education or non-profit"
+L484,Partial fit,fails or unknown: seniority (no)
+L485,Partial fit,fails or unknown: function (no)
+L486,Strong fit,all six must-haves
+L487,Strong fit,all six must-haves
+L488,Partial fit,fails or unknown: industry (no)
+L489,Weak fit,"fails or unknown: size (no), seniority (no)"
+L490,Strong fit,all six must-haves
+L491,Partial fit,fails or unknown: function (no)
+L492,Strong fit,all six must-haves
+L493,Strong fit,all six must-haves
+L494,Strong fit,all six must-haves
+L495,Partial fit,fails or unknown: industry (no)
+L496,Strong fit,all six must-haves
+L497,Partial fit,fails or unknown: industry (no)
+L498,Strong fit,all six must-haves
+L499,Strong fit,all six must-haves
+L500,Weak fit,"fails or unknown: function (no), seniority (no)"
+L501,Strong fit,all six must-haves
+L502,Partial fit,fails or unknown: industry (no)
+L503,Weak fit,"fails or unknown: industry (no), size (no)"
+L504,Partial fit,fails or unknown: industry (no)
+L505,Strong fit,all six must-haves
+L506,Strong fit,all six must-haves
+L507,Strong fit,all six must-haves
+L508,Strong fit,all six must-haves
+L509,Strong fit,all six must-haves
+L510,Partial fit,fails or unknown: industry (no)
+L511,Strong fit,all six must-haves
+L512,Partial fit,fails or unknown: function (no)
+L513,Partial fit,fails or unknown: size (no)
+L514,Partial fit,fails or unknown: outbound team (no)
+L515,Partial fit,fails or unknown: function (no)
+L516,Strong fit,all six must-haves
+L517,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown), function (no)"
+L518,No fit,"disqualifier: more than 5,000 employees"
+L519,Weak fit,"fails or unknown: industry (no), outbound team (no), function (no)"
+L520,Weak fit,"fails or unknown: industry (no), size (no), location (unknown), outbound team (no), function (no)"
+L521,No fit,"disqualifier: government, education or non-profit"
+L522,No fit,"disqualifier: government, education or non-profit"
+L523,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown), function (no)"
+L524,Weak fit,"fails or unknown: industry (no), function (no)"
+L525,No fit,"disqualifier: government, education or non-profit"
+L526,Weak fit,"fails or unknown: industry (no), outbound team (no), function (no)"
+L527,No fit,"disqualifier: government, education or non-profit"
+L528,Weak fit,"fails or unknown: industry (no), outbound team (unknown)"
+L529,No fit,"disqualifier: more than 5,000 employees; government, education or non-profit"
+L530,No fit,"disqualifier: more than 5,000 employees"
+L531,No fit,"disqualifier: government, education or non-profit"
+L532,No fit,"disqualifier: more than 5,000 employees"
+L533,Weak fit,"fails or unknown: industry (no), size (no), function (no)"
+L534,No fit,"disqualifier: government, education or non-profit"
+L535,No fit,"disqualifier: government, education or non-profit"
+L536,No fit,"disqualifier: government, education or non-profit"
+L537,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown), function (no)"
+L538,No fit,"disqualifier: more than 5,000 employees; government, education or non-profit"
+L539,No fit,"disqualifier: government, education or non-profit"
+L540,Weak fit,"fails or unknown: outbound team (no), function (no)"
+L541,No fit,"disqualifier: more than 5,000 employees; government, education or non-profit"
+L542,Partial fit,fails or unknown: outbound team (unknown)
+L543,Weak fit,"fails or unknown: outbound team (unknown), function (no)"
+L544,No fit,"disqualifier: government, education or non-profit"
+L545,Weak fit,"fails or unknown: industry (no), size (no), location (unknown), outbound team (unknown), function (no)"
+L546,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown), function (no)"
+L547,No fit,"disqualifier: more than 5,000 employees; government, education or non-profit"
+L548,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown), function (no)"
+L549,Weak fit,"fails or unknown: industry (no), outbound team (unknown), function (no)"
+L550,No fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown), function (no), seniority (no)"
+L551,No fit,"disqualifier: government, education or non-profit"
+L552,Weak fit,"fails or unknown: industry (no), size (unknown), outbound team (unknown), function (no)"
+L553,Weak fit,"fails or unknown: industry (no), outbound team (unknown), function (no)"
+L554,No fit,"disqualifier: government, education or non-profit"
+L555,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown), function (no)"
+L556,Weak fit,"fails or unknown: industry (no), outbound team (unknown), function (no), seniority (no)"
+L557,Weak fit,"fails or unknown: industry (no), outbound team (no), function (no)"
+L558,No fit,"disqualifier: government, education or non-profit"
+L559,No fit,"disqualifier: government, education or non-profit"
+L560,No fit,"disqualifier: more than 5,000 employees; government, education or non-profit"
+L561,No fit,"disqualifier: more than 5,000 employees; government, education or non-profit"
+L562,No fit,"disqualifier: more than 5,000 employees"
+L563,No fit,"disqualifier: government, education or non-profit"
+L564,Weak fit,"fails or unknown: industry (no), outbound team (unknown), function (no)"
+L565,No fit,"disqualifier: government, education or non-profit"
+L566,No fit,"disqualifier: government, education or non-profit"
+L567,Partial fit,fails or unknown: industry (no)
+L568,Weak fit,"fails or unknown: industry (no), function (no)"
+L569,No fit,"disqualifier: more than 5,000 employees; government, education or non-profit"
+L570,No fit,"disqualifier: more than 5,000 employees"
+L571,No fit,"disqualifier: government, education or non-profit"
+L572,No fit,"disqualifier: more than 5,000 employees; government, education or non-profit"
+L573,No fit,"disqualifier: more than 5,000 employees; government, education or non-profit"
+L574,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown)"
+L575,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown)"
+L576,Weak fit,"fails or unknown: industry (no), outbound team (unknown), function (no), seniority (no)"
+L577,Strong fit,all six must-haves
+L578,Partial fit,fails or unknown: function (no)
+L579,No fit,disqualifier: lead-data or outbound vendor (competitor)
+L580,Strong fit,all six must-haves
+L581,Strong fit,all six must-haves
+L582,Partial fit,fails or unknown: function (no)
+L583,Strong fit,all six must-haves
+L584,Weak fit,"fails or unknown: outbound team (no), function (no)"
+L585,Partial fit,fails or unknown: industry (no)
+L586,No fit,disqualifier: lead-data or outbound vendor (competitor)
+L587,Strong fit,all six must-haves
+L588,Strong fit,all six must-haves
+L589,Strong fit,all six must-haves
+L590,Strong fit,all six must-haves
+L591,Strong fit,all six must-haves
+L592,Strong fit,all six must-haves
+L593,Strong fit,all six must-haves
+L594,Weak fit,"fails or unknown: industry (no), outbound team (no)"
+L595,No fit,"disqualifier: more than 5,000 employees"
+L596,No fit,"disqualifier: more than 5,000 employees"
+L597,No fit,"disqualifier: more than 5,000 employees"
+L598,Weak fit,"fails or unknown: industry (no), outbound team (unknown), function (no)"
+L599,Weak fit,"fails or unknown: size (no), function (no)"
+L600,No fit,"disqualifier: more than 5,000 employees"
+L601,No fit,"disqualifier: more than 5,000 employees"
+L602,Weak fit,"fails or unknown: industry (no), size (no), function (no), seniority (no)"
+L603,Weak fit,"fails or unknown: industry (no), outbound team (no), function (no), seniority (no)"
+L604,No fit,"disqualifier: more than 5,000 employees"
+L605,No fit,"disqualifier: more than 5,000 employees"
+L606,Weak fit,"fails or unknown: industry (no), size (no), seniority (no)"
+L607,No fit,"disqualifier: more than 5,000 employees"
+L608,No fit,"disqualifier: more than 5,000 employees"
+L609,Weak fit,"fails or unknown: industry (no), function (no), seniority (no)"
+L610,No fit,"disqualifier: more than 5,000 employees"
+L611,Weak fit,"fails or unknown: industry (no), outbound team (no), function (no)"
+L612,No fit,"disqualifier: more than 5,000 employees"
+L613,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L614,Weak fit,"fails or unknown: industry (no), size (no)"
+L615,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown), function (no)"
+L616,Weak fit,"fails or unknown: industry (no), outbound team (no), function (no)"
+L617,No fit,"disqualifier: more than 5,000 employees"
+L618,No fit,"disqualifier: more than 5,000 employees"
+L619,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no), function (no), seniority (no)"
+L620,Weak fit,"fails or unknown: industry (no), outbound team (no)"
+L621,No fit,"disqualifier: more than 5,000 employees"
+L622,No fit,"disqualifier: more than 5,000 employees"
+L623,Weak fit,"fails or unknown: size (no), function (no)"
+L624,No fit,"disqualifier: more than 5,000 employees"
+L625,No fit,"disqualifier: more than 5,000 employees"
+L626,Weak fit,"fails or unknown: industry (no), size (no)"
+L627,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L628,Weak fit,"fails or unknown: industry (no), outbound team (no), seniority (no)"
+L629,Weak fit,"fails or unknown: industry (no), size (no), function (no)"
+L630,Weak fit,"fails or unknown: industry (no), size (no), seniority (no)"
+L631,No fit,"disqualifier: more than 5,000 employees"
+L632,Weak fit,"fails or unknown: industry (no), size (no), outbound team (no), seniority (no)"
+L633,Weak fit,"fails or unknown: industry (no), function (no)"
+L634,Partial fit,fails or unknown: industry (no)
+L635,Weak fit,"fails or unknown: industry (no), outbound team (no), function (no)"
+L636,Weak fit,"fails or unknown: industry (no), outbound team (unknown), function (no)"
+L637,Weak fit,"fails or unknown: industry (no), size (no), seniority (no)"
+L638,No fit,"disqualifier: more than 5,000 employees"
+L639,No fit,"disqualifier: more than 5,000 employees"
+L640,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"
+L641,No fit,"disqualifier: student, intern, job seeker or freelancer"
+L642,Strong fit,all six must-haves
+L643,Strong fit,all six must-haves
+L644,Strong fit,all six must-haves
+L645,Partial fit,fails or unknown: industry (no)
+L646,Strong fit,all six must-haves
+L647,Strong fit,all six must-haves
+L648,Partial fit,fails or unknown: size (no)
+L649,Strong fit,all six must-haves
+L650,Partial fit,fails or unknown: size (no)
+L651,No fit,"disqualifier: more than 5,000 employees"
+L652,No fit,"disqualifier: more than 5,000 employees"
+L653,Partial fit,fails or unknown: size (no)
+L654,Partial fit,fails or unknown: size (no)
+L655,No fit,"disqualifier: more than 5,000 employees"
+L656,No fit,"disqualifier: more than 5,000 employees"
+L657,No fit,"disqualifier: more than 5,000 employees"
+L658,No fit,"disqualifier: more than 5,000 employees"
+L659,No fit,"disqualifier: more than 5,000 employees"
+L660,No fit,"disqualifier: more than 5,000 employees"
+L661,No fit,"disqualifier: more than 5,000 employees"
+L662,No fit,"disqualifier: more than 5,000 employees"
+L663,No fit,"disqualifier: more than 5,000 employees"
+L664,No fit,"disqualifier: more than 5,000 employees"
+L665,No fit,"disqualifier: more than 5,000 employees"
+L666,No fit,"disqualifier: more than 5,000 employees"
+L667,No fit,"disqualifier: more than 5,000 employees"
+L668,No fit,"disqualifier: more than 5,000 employees"
+L669,No fit,"disqualifier: more than 5,000 employees"
+L670,No fit,"disqualifier: more than 5,000 employees"
+L671,No fit,"disqualifier: more than 5,000 employees"
+L672,No fit,"disqualifier: more than 5,000 employees"
+L673,No fit,"disqualifier: more than 5,000 employees"
+L674,No fit,"disqualifier: more than 5,000 employees"
+L675,Partial fit,fails or unknown: size (no)
+L676,No fit,"disqualifier: more than 5,000 employees"
+L677,No fit,"disqualifier: more than 5,000 employees"
+L678,No fit,"disqualifier: more than 5,000 employees"
+L679,No fit,"disqualifier: more than 5,000 employees"
+L680,Weak fit,"fails or unknown: size (no), function (no)"
+L681,Partial fit,fails or unknown: size (no)
+L682,No fit,"disqualifier: more than 5,000 employees"
+L683,No fit,"disqualifier: more than 5,000 employees"
+L684,No fit,"disqualifier: more than 5,000 employees"
+L685,No fit,"disqualifier: more than 5,000 employees"
+L686,No fit,"disqualifier: more than 5,000 employees"
+L687,No fit,"disqualifier: more than 5,000 employees"
+L688,Weak fit,"fails or unknown: size (no), function (no)"
+L689,Weak fit,"fails or unknown: size (no), function (no)"
+L690,No fit,"disqualifier: more than 5,000 employees"
+L691,No fit,"disqualifier: more than 5,000 employees"
+L692,No fit,"disqualifier: more than 5,000 employees"
+L693,No fit,"disqualifier: more than 5,000 employees"
+L694,No fit,"disqualifier: more than 5,000 employees"
+L695,Weak fit,"fails or unknown: size (no), seniority (no)"
+L696,No fit,"disqualifier: more than 5,000 employees"
+L697,No fit,"disqualifier: more than 5,000 employees"
+L698,No fit,"disqualifier: more than 5,000 employees"
+L699,No fit,"disqualifier: more than 5,000 employees"
+L700,No fit,"disqualifier: more than 5,000 employees"
+L701,No fit,"disqualifier: more than 5,000 employees"
+L702,Weak fit,"fails or unknown: industry (no), size (no), location (unknown), outbound team (unknown)"
+L703,No fit,"disqualifier: more than 5,000 employees"
+L704,No fit,"disqualifier: more than 5,000 employees"
+L705,No fit,"disqualifier: more than 5,000 employees"
+L706,No fit,"disqualifier: more than 5,000 employees"
+L707,No fit,"disqualifier: more than 5,000 employees"
+L708,Weak fit,"fails or unknown: size (no), function (no)"
+L709,No fit,"disqualifier: more than 5,000 employees"
+L710,No fit,"disqualifier: more than 5,000 employees"
+L711,Partial fit,fails or unknown: size (no)
+L712,No fit,"disqualifier: more than 5,000 employees"
+L713,No fit,"disqualifier: more than 5,000 employees"
+L714,No fit,"disqualifier: more than 5,000 employees"
+L715,No fit,"disqualifier: more than 5,000 employees"
+L716,No fit,"disqualifier: more than 5,000 employees"
+L717,No fit,"disqualifier: more than 5,000 employees"
+L718,No fit,"disqualifier: more than 5,000 employees"
+L719,No fit,"disqualifier: more than 5,000 employees"
+L720,No fit,"disqualifier: more than 5,000 employees"
+L721,No fit,"disqualifier: more than 5,000 employees"
+L722,No fit,"disqualifier: more than 5,000 employees"
+L723,No fit,"disqualifier: more than 5,000 employees"
+L724,No fit,"disqualifier: more than 5,000 employees"
+L725,No fit,"disqualifier: more than 5,000 employees"
+L726,No fit,"disqualifier: more than 5,000 employees"
+L727,No fit,"disqualifier: more than 5,000 employees"
+L728,Partial fit,fails or unknown: size (no)
+L729,No fit,"disqualifier: more than 5,000 employees"
+L730,No fit,"disqualifier: more than 5,000 employees"
+L731,No fit,"disqualifier: more than 5,000 employees"
+L732,No fit,"disqualifier: more than 5,000 employees"
+L733,No fit,"disqualifier: more than 5,000 employees"
+L734,Partial fit,fails or unknown: size (no)
+L735,Partial fit,fails or unknown: size (no)
+L736,No fit,"disqualifier: more than 5,000 employees"
+L737,No fit,"disqualifier: more than 5,000 employees"
+L738,No fit,"disqualifier: more than 5,000 employees"
+L739,Weak fit,"fails or unknown: size (no), outbound team (unknown)"
+L740,Partial fit,fails or unknown: size (no)
+L741,No fit,"disqualifier: more than 5,000 employees"
+L742,Weak fit,"fails or unknown: size (no), function (no), seniority (no)"
+L743,No fit,"disqualifier: more than 5,000 employees"
+L744,No fit,"disqualifier: more than 5,000 employees"
+L745,No fit,"disqualifier: more than 5,000 employees"
+L746,Weak fit,"fails or unknown: size (no), function (no)"
+L747,No fit,"disqualifier: more than 5,000 employees"
+L748,No fit,"disqualifier: more than 5,000 employees"
+L749,No fit,"disqualifier: more than 5,000 employees"
+L750,No fit,"disqualifier: more than 5,000 employees"
+L751,No fit,"disqualifier: more than 5,000 employees"
+L752,Partial fit,fails or unknown: size (no)
+L753,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown)"
+L754,No fit,"disqualifier: more than 5,000 employees"
+L755,No fit,"disqualifier: more than 5,000 employees"
+L756,No fit,"disqualifier: more than 5,000 employees"
+L757,No fit,"disqualifier: more than 5,000 employees"
+L758,Partial fit,fails or unknown: size (no)
+L759,No fit,"disqualifier: more than 5,000 employees"
+L760,No fit,"disqualifier: more than 5,000 employees"
+L761,No fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown), function (no), seniority (no)"
+L762,Weak fit,"fails or unknown: size (no), function (no)"
+L763,No fit,"disqualifier: more than 5,000 employees"
+L764,Partial fit,fails or unknown: size (no)
+L765,Weak fit,"fails or unknown: industry (no), location (no), outbound team (unknown)"
+L766,No fit,"disqualifier: more than 5,000 employees"
+L767,No fit,"disqualifier: more than 5,000 employees"
+L768,No fit,"disqualifier: more than 5,000 employees"
+L769,No fit,"disqualifier: more than 5,000 employees"
+L770,No fit,"disqualifier: more than 5,000 employees"
+L771,Partial fit,fails or unknown: function (no)
+L772,Partial fit,fails or unknown: location (no)
+L773,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown), seniority (no)"
+L774,Partial fit,fails or unknown: seniority (no)
+L775,Partial fit,fails or unknown: location (no)
+L776,Partial fit,fails or unknown: location (no)
+L777,Weak fit,"fails or unknown: location (no), outbound team (no)"
+L778,Weak fit,"fails or unknown: location (no), seniority (no)"
+L779,Partial fit,fails or unknown: location (no)
+L780,Strong fit,all six must-haves
+L781,Strong fit,all six must-haves
+L782,Partial fit,fails or unknown: location (no)
+L783,Partial fit,fails or unknown: location (no)
+L784,Weak fit,"fails or unknown: size (no), location (no), function (no)"
+L785,Partial fit,fails or unknown: location (no)
+L786,Partial fit,fails or unknown: location (no)
+L787,Strong fit,all six must-haves
+L788,Partial fit,fails or unknown: function (no)
+L789,Strong fit,all six must-haves
+L790,Weak fit,"fails or unknown: location (no), outbound team (no)"
+L791,Partial fit,fails or unknown: function (no)
+L792,Weak fit,"fails or unknown: industry (unknown), size (unknown), location (unknown), outbound team (unknown), seniority (no)"
+L793,Strong fit,all six must-haves
+L794,Partial fit,fails or unknown: function (no)
+L795,Partial fit,fails or unknown: location (no)
+L796,Strong fit,all six must-haves
+L797,Partial fit,fails or unknown: location (no)
+L798,Partial fit,fails or unknown: function (no)
+L799,Strong fit,all six must-haves
+L800,Strong fit,all six must-haves
+L801,Weak fit,"fails or unknown: location (no), function (no)"
+L802,Partial fit,fails or unknown: function (no)
+L803,Strong fit,all six must-haves
+L804,Partial fit,fails or unknown: location (no)
+L805,Strong fit,all six must-haves
+L806,Partial fit,fails or unknown: location (no)
+L807,Strong fit,all six must-haves
+L808,Weak fit,"fails or unknown: size (no), location (no)"
+L809,Partial fit,fails or unknown: function (no)
+L810,Partial fit,fails or unknown: location (no)
+L811,Partial fit,fails or unknown: location (no)
+L812,Partial fit,fails or unknown: location (no)
+L813,Weak fit,"fails or unknown: location (no), outbound team (unknown)"
+L814,Partial fit,fails or unknown: function (no)
+L815,Partial fit,fails or unknown: function (no)
+L816,Partial fit,fails or unknown: location (no)
+L817,Partial fit,fails or unknown: location (no)
+L818,Partial fit,fails or unknown: location (no)
+L819,Partial fit,fails or unknown: location (no)
+L820,Strong fit,all six must-haves
+L821,Strong fit,all six must-haves
+L822,Partial fit,fails or unknown: location (no)
+L823,Strong fit,all six must-haves
+L824,Partial fit,fails or unknown: location (no)
+L825,Strong fit,all six must-haves
+L826,Partial fit,fails or unknown: location (no)
+L827,Weak fit,"fails or unknown: location (no), function (no)"
+L828,Strong fit,all six must-haves
+L829,Partial fit,fails or unknown: function (no)
+L830,Partial fit,fails or unknown: location (no)
+L831,Strong fit,all six must-haves
+L832,Partial fit,fails or unknown: location (no)
+L833,Weak fit,"fails or unknown: location (no), seniority (no)"
+L834,Partial fit,fails or unknown: location (no)
+L835,Strong fit,all six must-haves
+L836,Partial fit,fails or unknown: location (no)
+L837,Strong fit,all six must-haves
+L838,Partial fit,fails or unknown: function (no)
+L839,Partial fit,fails or unknown: outbound team (no)
+L840,Partial fit,fails or unknown: outbound team (unknown)
+L841,Strong fit,all six must-haves
+L842,Partial fit,fails or unknown: location (no)
+L843,Partial fit,fails or unknown: function (no)
+L844,Strong fit,all six must-haves
+L845,Partial fit,fails or unknown: location (no)
+L846,Partial fit,fails or unknown: location (no)
+L847,Strong fit,all six must-haves
+L848,Partial fit,fails or unknown: outbound team (no)
+L849,Partial fit,fails or unknown: outbound team (no)
+L850,Strong fit,all six must-haves
+L851,Strong fit,all six must-haves
+L852,Strong fit,all six must-haves
+L853,Strong fit,all six must-haves
+L854,Strong fit,all six must-haves
+L855,Strong fit,all six must-haves
+L856,Strong fit,all six must-haves
+L857,Strong fit,all six must-haves
+L858,Strong fit,all six must-haves
+L859,Strong fit,all six must-haves
+L860,Strong fit,all six must-haves
+L861,Strong fit,all six must-haves
+L862,Strong fit,all six must-haves
+L863,Strong fit,all six must-haves
+L864,Strong fit,all six must-haves
+L865,Strong fit,all six must-haves
+L866,Strong fit,all six must-haves
+L867,Strong fit,all six must-haves
+L868,Strong fit,all six must-haves
+L869,Strong fit,all six must-haves
+L870,Strong fit,all six must-haves
+L871,Strong fit,all six must-haves
+L872,Strong fit,all six must-haves
+L873,Weak fit,"fails or unknown: industry (no), outbound team (no)"
+L874,Strong fit,all six must-haves
+L875,Strong fit,all six must-haves
+L876,Strong fit,all six must-haves
+L877,Strong fit,all six must-haves
+L878,Strong fit,all six must-haves
+L879,Strong fit,all six must-haves
+L880,Strong fit,all six must-haves
+L881,Strong fit,all six must-haves
+L882,Strong fit,all six must-haves
+L883,Strong fit,all six must-haves
+L884,Strong fit,all six must-haves
+L885,Strong fit,all six must-haves
+L886,Strong fit,all six must-haves
+L887,Strong fit,all six must-haves
+L888,Weak fit,"fails or unknown: industry (no), size (no), location (unknown), outbound team (unknown)"
+L889,Strong fit,all six must-haves
+L890,Strong fit,all six must-haves
+L891,Strong fit,all six must-haves
+L892,Strong fit,all six must-haves
+L893,Strong fit,all six must-haves
+L894,Strong fit,all six must-haves
+L895,Strong fit,all six must-haves
+L896,Strong fit,all six must-haves
+L897,Strong fit,all six must-haves
+L898,Strong fit,all six must-haves
+L899,Partial fit,fails or unknown: function (no)
+L900,Strong fit,all six must-haves
+L901,Strong fit,all six must-haves
+L902,Strong fit,all six must-haves
+L903,Strong fit,all six must-haves
+L904,Strong fit,all six must-haves
+L905,Partial fit,fails or unknown: function (no)
+L906,Strong fit,all six must-haves
+L907,Strong fit,all six must-haves
+L908,No fit,"disqualifier: more than 5,000 employees"
+L909,Partial fit,fails or unknown: seniority (no)
+L910,Strong fit,all six must-haves
+L911,Strong fit,all six must-haves
+L912,Strong fit,all six must-haves
+L913,Partial fit,fails or unknown: seniority (no)
+L914,Strong fit,all six must-haves
+L915,Strong fit,all six must-haves
+L916,Strong fit,all six must-haves
+L917,Weak fit,"fails or unknown: outbound team (no), seniority (no)"
+L918,Strong fit,all six must-haves
+L919,Strong fit,all six must-haves
+L920,Strong fit,all six must-haves
+L921,Strong fit,all six must-haves
+L922,Strong fit,all six must-haves
+L923,Strong fit,all six must-haves
+L924,Strong fit,all six must-haves
+L925,Strong fit,all six must-haves
+L926,Strong fit,all six must-haves
+L927,Partial fit,fails or unknown: function (no)
+L928,Strong fit,all six must-haves
+L929,Strong fit,all six must-haves
+L930,Strong fit,all six must-haves
+L931,Strong fit,all six must-haves
+L932,Strong fit,all six must-haves
+L933,Strong fit,all six must-haves
+L934,Strong fit,all six must-haves
+L935,Partial fit,fails or unknown: function (no)
+L936,Strong fit,all six must-haves
+L937,Partial fit,fails or unknown: seniority (no)
+L938,Strong fit,all six must-haves
+L939,Strong fit,all six must-haves
+L940,Strong fit,all six must-haves
+L941,Strong fit,all six must-haves
+L942,Strong fit,all six must-haves
+L943,Strong fit,all six must-haves
+L944,Strong fit,all six must-haves
+L945,Strong fit,all six must-haves
+L946,Strong fit,all six must-haves
+L947,Strong fit,all six must-haves
+L948,Strong fit,all six must-haves
+L949,Strong fit,all six must-haves
+L950,Strong fit,all six must-haves
+L951,Strong fit,all six must-haves
+L952,Strong fit,all six must-haves
+L953,Strong fit,all six must-haves
+L954,Strong fit,all six must-haves
+L955,Strong fit,all six must-haves
+L956,Strong fit,all six must-haves
+L957,Strong fit,all six must-haves
+L958,Strong fit,all six must-haves
+L959,Strong fit,all six must-haves
+L960,Strong fit,all six must-haves
+L961,Strong fit,all six must-haves
+L962,Strong fit,all six must-haves
+L963,Strong fit,all six must-haves
+L964,Strong fit,all six must-haves
+L965,Strong fit,all six must-haves
+L966,Strong fit,all six must-haves
+L967,Strong fit,all six must-haves
+L968,Strong fit,all six must-haves
+L969,Strong fit,all six must-haves
+L970,Strong fit,all six must-haves
+L971,Strong fit,all six must-haves
+L972,Strong fit,all six must-haves
+L973,Strong fit,all six must-haves
+L974,Strong fit,all six must-haves
+L975,Strong fit,all six must-haves
+L976,Strong fit,all six must-haves
+L977,Strong fit,all six must-haves
+L978,Strong fit,all six must-haves
+L979,Strong fit,all six must-haves
+L980,Strong fit,all six must-haves
+L981,Strong fit,all six must-haves
+L982,Strong fit,all six must-haves
+L983,Partial fit,fails or unknown: seniority (no)
+L984,Strong fit,all six must-haves
+L985,Strong fit,all six must-haves
+L986,Strong fit,all six must-haves
+L987,Strong fit,all six must-haves
+L988,Strong fit,all six must-haves
+L989,Strong fit,all six must-haves
+L990,Strong fit,all six must-haves
+L991,Strong fit,all six must-haves
+L992,Strong fit,all six must-haves
+L993,Partial fit,fails or unknown: industry (no)
+L994,Strong fit,all six must-haves
+L995,Strong fit,all six must-haves
+L996,Strong fit,all six must-haves
+L997,Strong fit,all six must-haves
+L998,Weak fit,"fails or unknown: industry (no), size (no), outbound team (unknown)"

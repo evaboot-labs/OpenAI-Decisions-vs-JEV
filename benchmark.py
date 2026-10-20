@@ -87,7 +87,8 @@ MODELS = {"openai": score_openai, "jev": score_jev}
 def describe(row):
     keys = ["Job title", "Company", "Company industry", "Company employees", "Company employee range",
             "Company location", "Lead location", "Sales team size", "Company description"]
-    return "\n".join(f"{k}: {row[k] or 'unknown'}" for k in keys)
+    # Evaboot writes 0 when the company page shows no headcount; the model must read that as unknown.
+    return "\n".join(f"{k}: {row[k] if row[k] not in ('', '0') else 'unknown'}" for k in keys)
 
 
 def run_one(task):

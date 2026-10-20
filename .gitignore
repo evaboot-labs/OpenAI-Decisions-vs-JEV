@@ -4,3 +4,4 @@ data/raw-*.json
 *.log
 *-run1.*
 data/leads.csv
+*-147.*

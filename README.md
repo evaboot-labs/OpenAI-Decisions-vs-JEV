@@ -18,31 +18,36 @@ exported with Evaboot.
 
 ## Results (2026-10-20)
 
-147 leads, each scored 3 times by each model: 882 calls, 0 errors.
+998 leads, each scored 3 times by each model: 5,988 calls, 0 errors.
 Full tables, per-label accuracy and confusion matrices: [`report.md`](report.md).
 
 | | OpenAI | JEV |
 |---|---|---|
-| Exact level (vs our labels) | 41% | 73% |
-| Within one level | 90% | 97% |
-| Mean error (levels 0 to 3) | 0.71 | 0.41 |
-| Leads that changed level between runs | 0% | 7% |
-| Median response time | 0.26 s | 0.27 s |
-| Input tokens per lead | 596 | 816 |
+| Exact level (vs our labels) | 46% | 71% |
+| Within one level | 90% | 99% |
+| Mean error (levels 0 to 3) | 0.65 | 0.40 |
+| Leads that changed level between runs | 0% | 10% |
+| Median response time | 0.27 s | 0.26 s |
+| Input tokens per lead | 598 | 819 |
 | Cost per 1,000 leads | $0.060 | $0.034 |
 
 What it means:
 
-- **Both rank leads the same way.** Spearman correlation with our labels is 0.83 for both,
-  and 0.95 between the two models. If you sort by score and take the top, either works.
-- **OpenAI is one level stricter.** It put 32 of 37 "Weak fit" leads in "No fit", and 28 of
-  60 "Strong fit" leads in "Partial fit". If you filter on the level name, this matters.
-- **OpenAI is deterministic.** Same lead, same answer, every run. JEV moved 7% of leads by one
+- **Both rank leads the same way.** Spearman correlation with our labels is 0.85 (OpenAI) and
+  0.87 (JEV), and 0.94 between the two models. Of the top 100 leads by score, 95 are Strong
+  fit for both.
+- **OpenAI is one level stricter.** It put 171 of 254 "Weak fit" leads in "No fit", and 168 of
+  307 "Strong fit" leads in "Partial fit". If you filter on the level name, this matters.
+- **OpenAI is deterministic.** Same lead, same answer, every run. JEV moved 10% of leads by one
   level between runs.
 - **JEV is cheaper per lead**, but it is early access only.
 
-Limits: one ICP, labels written by us, 147 leads, one day. Run it on your own leads before
-you choose.
+The leads come from 12 Sales Navigator exports picked to cover every fit level: ICP sales
+leaders in Europe and North America, sales leaders at companies over 1,000 staff, in other
+industries and outside the region, other functions, junior sales roles and the public sector.
+
+Limits: one ICP, labels written by us as rules (`label_leads.py`), one day. Run it on your own
+leads before you choose.
 
 The lead list itself is not in this repo: those are real people. `data/labels.csv` and
 `results.csv` keep every label, every answer and the reason for each label, by lead id.
@@ -78,7 +83,6 @@ You need Python 3.9 or later. No packages to install.
 | `ICP.md` | The ideal customer profile both models read |
 | `build_leads.py` | Turns Evaboot export JSON into `data/leads.csv` (not committed) |
 | `label_leads.py` | Our rubric: six must-haves and four disqualifiers, written as rules |
-| `data/overrides.csv` | The one label we corrected by hand, with the reason |
 | `n8n/openai-vs-jev-lead-scoring.json` | n8n template: score a Google Sheet with both models side by side |
 
 ## n8n template

@@ -40,7 +40,7 @@ COMPETITORS = re.compile(r"\b(b2b rocket|apollo\.io|zoominfo|lusha|cognism|kaspr
 
 def employees(row):
     raw = (row["Company employees"] or "").replace(",", "").strip()
-    if raw.isdigit():
+    if raw.isdigit() and int(raw) > 0:  # 0 means no headcount on the company page
         return int(raw)
     nums = [int(n) for n in re.findall(r"\d+", (row["Company employee range"] or "").replace(",", ""))]
     return nums[0] if nums else None
@@ -49,6 +49,8 @@ def employees(row):
 def checks(row):
     # "Product owner" is a product role, not a business owner.
     title = re.sub(r"product owner", "product role", row["Job title"], flags=re.I)
+    # Growth marketing and revenue marketing are marketing roles, not the sales function.
+    title = re.sub(r"(growth|revenue|product) marketing", "marketing", title, flags=re.I)
     industry = (row["Company industry"] or "").lower()
     location = (row["Company location"] or "").lower()
     size = employees(row)
@@ -56,7 +58,8 @@ def checks(row):
     result = {
         "industry": None if not industry else any(i in industry for i in INDUSTRIES),
         "size": None if size is None else 11 <= size <= 500,
-        "location": None if not location else any(c in location for c in EUROPE + NORTH_AMERICA),
+        # The country is the last part of the location ("New South Wales, Australia" is not Wales).
+        "location": None if not location else any(c in location.split(",")[-1] for c in EUROPE + NORTH_AMERICA),
         "outbound team": None if not sales.isdigit() else int(sales) >= 3,
         # Founders and CEOs own sales in an 11-500 company, and ICP.md names Founder as a buyer.
         # Sales engineers are pre-sales technical staff, not the sales function.
