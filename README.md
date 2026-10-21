@@ -1,25 +1,49 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/banner-dark.png">
+  <img src=".github/assets/banner-light.png" alt="998 B2B leads scored against one ICP by the OpenAI Decisions API and JEV: JEV matched our labels 71% of the time, OpenAI 46%" width="1280">
+</picture>
+
 # OpenAI Decisions API vs JEV for lead scoring
 
-A benchmark of two AI decision models on one job: scoring B2B leads against an ideal
-customer profile. Both get the same input, the same question and the same four fit levels:
+A benchmark of two AI decision models on one job: scoring B2B leads against an ideal customer profile. Both get the same input, the same question and the same four fit levels. Run it again on your own leads.
 
-| Level | Meaning |
-|---|---|
-| No fit | Fails a disqualifier, or matches none of the must-haves |
-| Weak fit | Matches one must-have |
-| Partial fit | Matches most must-haves, one fails or is unknown |
-| Strong fit | Matches every must-have and no disqualifier |
+[![Works with Claude Code · Codex · Cursor](https://img.shields.io/badge/works%20with-Claude%20Code%20%C2%B7%20Codex%20%C2%B7%20Cursor-5719D9)](AGENTS.md)
+[![License: MIT](https://img.shields.io/badge/license-MIT-5719D9)](LICENSE)
 
-- **OpenAI Decisions API**: `POST https://api.openai.com/v1/decisions`, model `gpt-6-luna`
-- **Typesafe JEV**: `POST https://api.typesafe.ai/v1/systemone`, model `jev-latest` (early access)
+## Set it up in one prompt
 
-Built by [Evaboot](https://evaboot.com). The leads come from LinkedIn Sales Navigator,
-exported with Evaboot.
+Paste this into Claude Code, Codex or Cursor:
 
-## Results (2026-10-20)
+```text
+Compare the OpenAI Decisions API and JEV on my own leads. Clone
+https://github.com/evaboot-labs/openai-decisions-vs-jev, read AGENTS.md and follow the
+compare-models skill. Show me the labels before you use them, and run a 10-lead test
+before the full benchmark.
+```
 
-998 leads, each scored 3 times by each model: 5,988 calls, 0 errors.
-Full tables, per-label accuracy and confusion matrices: [`report.md`](report.md).
+<details>
+<summary>Or install the skill</summary>
+
+Claude Code:
+
+```text
+/plugin marketplace add evaboot-labs/openai-decisions-vs-jev
+/plugin install openai-decisions-vs-jev@evaboot-labs-openai-decisions-vs-jev
+```
+
+Codex, Cursor and other agents:
+
+```bash
+npx skills add evaboot-labs/openai-decisions-vs-jev
+```
+
+</details>
+
+## How it works
+
+**Results on 998 leads.** Each lead was scored 3 times by each model on 2026-10-20: 5,988 calls, 0 errors. Full tables, per-label accuracy and confusion matrices: [`report.md`](report.md).
+
+<img src=".github/assets/results-chart.png" alt="Grouped bars: exact level 46% OpenAI vs 71% JEV, within one level 90% vs 99%, Strong fit exact 39% vs 69%, Weak fit exact 26% vs 63%" width="800">
 
 | | OpenAI | JEV |
 |---|---|---|
@@ -31,67 +55,32 @@ Full tables, per-label accuracy and confusion matrices: [`report.md`](report.md)
 | Input tokens per lead | 598 | 819 |
 | Cost per 1,000 leads | $0.060 | $0.034 |
 
-What it means:
+- **OpenAI Decisions API**: `POST https://api.openai.com/v1/decisions`, model `gpt-6-luna`.
+- **Typesafe JEV**: `POST https://api.typesafe.ai/v1/systemone`, model `jev-latest` (early access).
 
-- **Both rank leads the same way.** Spearman correlation with our labels is 0.85 (OpenAI) and
-  0.87 (JEV), and 0.94 between the two models. Of the top 100 leads by score, 95 are Strong
-  fit for both.
-- **OpenAI is one level stricter.** It put 171 of 254 "Weak fit" leads in "No fit", and 168 of
-  307 "Strong fit" leads in "Partial fit". If you filter on the level name, this matters.
-- **OpenAI is deterministic.** Same lead, same answer, every run. JEV moved 10% of leads by one
-  level between runs.
-- **JEV is cheaper per lead**, but it is early access only.
+## Same ranking, different levels
 
-The leads come from 12 Sales Navigator exports picked to cover every fit level: ICP sales
-leaders in Europe and North America, sales leaders at companies over 1,000 staff, in other
-industries and outside the region, other functions, junior sales roles and the public sector.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/findings-dark.png">
+  <img src=".github/assets/findings-light.png" alt="Four findings: both models rank leads alike, OpenAI is stricter, OpenAI repeats itself, JEV costs less" width="1280">
+</picture>
 
-Limits: one ICP, labels written by us as rules (`label_leads.py`), one day. Run it on your own
-leads before you choose.
+The leads come from 12 Sales Navigator exports, made with [Evaboot](https://evaboot.com), picked to cover every fit level. Limits: one ICP, labels written by us as rules (`label_leads.py`), one day. The lead list itself is not in this repo: those are real people.
 
-The lead list itself is not in this repo: those are real people. `data/labels.csv` and
-`results.csv` keep every label, every answer and the reason for each label, by lead id.
+## What you need
 
-## Run it on your own leads
+- **An OpenAI API key** and a **Typesafe JEV key** (JEV is early access, by waitlist).
+- **Your leads** in `data/leads.csv` with a correct level for each in `data/labels.csv`. An Evaboot export has every column the benchmark reads.
+- **Python 3.9 or later.** No packages to install.
+- **Cost:** about 6 cents (OpenAI) and 3 cents (JEV) per 1,000 leads and run.
 
-You need Python 3.9 or later. No packages to install.
+## Go further
 
-1. Copy the env file and add both keys:
-   ```bash
-   cp .env.example .env
-   ```
-   OpenAI key: https://platform.openai.com/api-keys. JEV key: https://typesafe.ai (waitlist).
-2. Replace [`ICP.md`](ICP.md) with your own profile.
-3. Put your leads in `data/leads.csv` with the columns `id`, `Job title`, `Company`,
-   `Company industry`, `Company employees`, `Company employee range`, `Company location`,
-   `Lead location`, `Sales team size`, `Company description`. An Evaboot export has all of
-   them: save the export JSON as `data/raw-<anything>.json` and run `python3 build_leads.py`.
-4. Write the correct level for each lead in `data/labels.csv` (`id,label`). Do it by hand,
-   or adapt the rules in `label_leads.py`, which encode our `ICP.md`.
-5. Run the benchmark:
-   ```bash
-   python3 benchmark.py --limit 10 --runs 1   # quick check
-   python3 benchmark.py                       # full run, 3 runs per model
-   ```
-   It writes `results.csv` (one row per call) and `report.md`.
-
-## Files
-
-| File | What it is |
+| Page | For |
 |---|---|
-| `benchmark.py` | Sends every lead to both models, writes `results.csv` and `report.md` |
-| `ICP.md` | The ideal customer profile both models read |
-| `build_leads.py` | Turns Evaboot export JSON into `data/leads.csv` (not committed) |
-| `label_leads.py` | Our rubric: six must-haves and four disqualifiers, written as rules |
-| `n8n/openai-vs-jev-lead-scoring.json` | n8n template: score a Google Sheet with both models side by side |
+| [Run it on your own leads](docs/run-on-your-leads.md) | Keys, lead and label files, every script, the n8n template |
+| [Full report](report.md) | Per-label accuracy and confusion matrices |
 
-## n8n template
+---
 
-Import `n8n/openai-vs-jev-lead-scoring.json` in n8n. It reads a Google Sheet, sends each row
-to both models and writes OpenAI score, OpenAI fit, JEV score, JEV fit and Same level back to
-the row. The setup steps are on the sticky note inside the workflow.
-
-## With an AI agent
-
-Open this folder in Claude Code, Codex or Cursor and ask: "compare OpenAI and JEV on my
-leads". The agent follows [`AGENTS.md`](AGENTS.md).
+Agents: start at [AGENTS.md](AGENTS.md) · Built by [Evaboot](https://evaboot.com) · More workflows at [github.com/evaboot-labs](https://github.com/evaboot-labs) · [MIT license](LICENSE)

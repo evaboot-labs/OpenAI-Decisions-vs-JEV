@@ -1,0 +1,22 @@
+{
+  "name": "openai-decisions-vs-jev",
+  "version": "1.0.0",
+  "description": "Benchmark the OpenAI Decisions API against Typesafe JEV for ICP lead scoring on 998 B2B leads, and rerun it on your own leads. Python scripts, n8n template and agent skill.",
+  "author": {
+    "name": "Evaboot",
+    "url": "https://evaboot.com"
+  },
+  "homepage": "https://evaboot.com/blog/ai-powered-fit-scoring-for-icp-lead-list",
+  "repository": "https://github.com/evaboot-labs/openai-decisions-vs-jev",
+  "license": "MIT",
+  "privacyPolicyUrl": "https://evaboot.com/privacy-policy",
+  "keywords": [
+    "benchmark",
+    "lead-scoring",
+    "openai",
+    "typesafe",
+    "jev",
+    "evaboot"
+  ],
+  "skills": "./skills/"
+}

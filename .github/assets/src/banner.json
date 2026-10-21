@@ -1,0 +1,7 @@
+{"layout": "flow", "eyebrow": "evaboot-labs · openai-decisions-vs-jev", "headline": "OpenAI Decisions vs JEV.",
+ "subline": "998 B2B leads, scored 3 times by each model, against one ICP.",
+ "nodes": [{"label": "01 · Leads", "title": "998 B2B leads", "caption": "Sales Navigator, via Evaboot"},
+           {"label": "02 · Question", "title": "One ICP, four levels", "caption": "No fit to Strong fit"},
+           {"label": "03 · Models", "title": "OpenAI and JEV", "caption": "Same input, 3 runs each"},
+           {"label": "04 · Result", "title": "JEV 71%, OpenAI 46%", "caption": "Exact level vs our labels"}],
+ "spec": "<em>5,988</em> calls · 0 errors · <em>benchmark.py</em>"}

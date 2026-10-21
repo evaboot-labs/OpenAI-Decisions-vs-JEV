@@ -1,0 +1,17 @@
+{
+  "name": "evaboot-labs-openai-decisions-vs-jev",
+  "owner": {
+    "name": "Evaboot",
+    "url": "https://evaboot.com"
+  },
+  "metadata": {
+    "description": "Benchmark the OpenAI Decisions API against Typesafe JEV for ICP lead scoring on 998 B2B leads, and rerun it on your own leads. Python scripts, n8n template and agent skill."
+  },
+  "plugins": [
+    {
+      "name": "openai-decisions-vs-jev",
+      "source": "./",
+      "description": "Benchmark the OpenAI Decisions API against Typesafe JEV for ICP lead scoring on 998 B2B leads, and rerun it on your own leads. Python scripts, n8n template and agent skill."
+    }
+  ]
+}
