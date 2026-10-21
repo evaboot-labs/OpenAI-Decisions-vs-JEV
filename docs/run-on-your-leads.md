@@ -12,7 +12,7 @@ You need Python 3.9 or later. No packages to install.
    `Company industry`, `Company employees`, `Company employee range`, `Company location`,
    `Lead location`, `Sales team size`, `Company description`. An Evaboot export has all of
    them: save the export JSON as `data/raw-<anything>.json` and run `python3 build_leads.py`.
-4. Write the correct level for each lead in `data/labels.csv` (`id,label`). Do it by hand,
+4. Write the correct level for each lead in `data/labels.csv` (`id,label`). The label is exactly `No fit`, `Weak fit`, `Partial fit` or `Strong fit` (case matters), and each `id` matches an `id` in `data/leads.csv`. Do it by hand,
    or adapt the rules in `label_leads.py`, which encode our `ICP.md`.
 5. Run the benchmark:
    ```bash
