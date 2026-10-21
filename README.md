@@ -22,7 +22,7 @@ Paste this into Claude Code, Codex or Cursor:
 
 ```text
 Compare the OpenAI Decisions API and Typesafe JEV on my own leads.
-Clone https://github.com/evaboot-labs/OpenAI-Decisions-vs-JEV, read AGENTS.md and follow the
+Clone https://github.com/evaboot-labs/openai-decisions-vs-jev, read AGENTS.md and follow the
 compare-models skill. Ask me for my ideal customer profile and my lead list (an Evaboot
 export works), help me label a sample, and run a quick check before the full benchmark.
 ```
@@ -31,7 +31,7 @@ Prefer n8n? Follow [`docs/n8n.md`](docs/n8n.md), or paste this instead:
 
 ```text
 Set up the OpenAI vs JEV lead scoring workflow in my n8n.
-Clone https://github.com/evaboot-labs/OpenAI-Decisions-vs-JEV and follow docs/n8n.md.
+Clone https://github.com/evaboot-labs/openai-decisions-vs-jev and follow docs/n8n.md.
 Walk me through importing n8n/openai-vs-jev-lead-scoring.json, adding the Google Sheets,
 OpenAI and JEV credentials, and filling in my sheet URL and ICP, one step at a time.
 ```
