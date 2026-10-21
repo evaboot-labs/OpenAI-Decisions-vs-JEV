@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OpenAI Decisions vs JEV results chart</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; width: 1600px; height: 800px; overflow: hidden; background: #F9F7FF; font-family: Manrope, system-ui, sans-serif; color: #1A1A2E; }
+  .mono { font-family: "JetBrains Mono", ui-monospace, monospace; text-transform: uppercase; letter-spacing: .14em; }
+  .eyebrow { position: absolute; left: 96px; top: 64px; font-size: 16px; font-weight: 600; color: #5719D9; }
+  h1 { position: absolute; left: 96px; top: 96px; margin: 0; font-size: 48px; font-weight: 800; letter-spacing: -.03em; }
+  .legend { position: absolute; right: 96px; top: 112px; display: flex; gap: 32px; font-size: 18px; font-weight: 700; }
+  .legend span::before { content: ""; display: inline-block; width: 14px; height: 14px; border-radius: 2px; margin-right: 10px; vertical-align: -1px; background: var(--c); }
+  svg { position: absolute; left: 96px; top: 200px; }
+  text { font-family: Manrope, system-ui, sans-serif; }
+</style>
+</head>
+<body>
+<div class="eyebrow mono">evaboot-labs · openai-decisions-vs-jev · 998 leads, 3 runs each</div>
+<h1>JEV lands on the right level more often.</h1>
+<div class="legend"><span style="--c:#B9A6E8">OpenAI Decisions</span><span style="--c:#5719D9">JEV</span></div>
+<svg id="chart" width="1408" height="580"></svg>
+<script>
+// Values from report.md (2026-10-20). Update them there first, then here.
+const groups = [
+  { label: "Exact level", openai: 46, jev: 71 },
+  { label: "Within one level", openai: 90, jev: 99 },
+  { label: "Strong fit exact", openai: 39, jev: 69 },
+  { label: "Weak fit exact", openai: 26, jev: 63 },
+];
+const svg = document.getElementById("chart"), ns = "http://www.w3.org/2000/svg";
+const H = 440, y0 = 56, gw = 1408 / groups.length, bw = 96;
+const add = (tag, attrs, text) => { const e = document.createElementNS(ns, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (text != null) e.textContent = text; svg.append(e); };
+[0, 25, 50, 75, 100].forEach(v => { const y = y0 + H - H * v / 100; add("line", { x1: 0, x2: 1408, y1: y, y2: y, stroke: "#E4DBFA" }); });
+groups.forEach((g, i) => {
+  const cx = gw * i + gw / 2;
+  [["openai", "#B9A6E8", -bw - 8], ["jev", "#5719D9", 8]].forEach(([k, color, dx]) => {
+    const h = H * g[k] / 100, x = cx + dx, y = y0 + H - h;
+    add("rect", { x, y, width: bw, height: h, rx: 3, fill: color });
+    add("text", { x: x + bw / 2, y: y - 12, "text-anchor": "middle", "font-size": 26, "font-weight": 800, fill: "#1A1A2E" }, g[k] + "%");
+  });
+  add("text", { x: cx, y: y0 + H + 48, "text-anchor": "middle", "font-size": 22, "font-weight": 700, fill: "#6B6B80" }, g.label);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{"layout": "cards", "eyebrow": "evaboot-labs · what it means", "headline": "Same ranking, different levels.", "subline": "Both models order leads alike. They disagree on where the lines fall.",
+ "cards": [{"label": "Ranking", "title": "Spearman 0.94", "quote": "Between the two models. Of the top 100 leads, <u>95</u> are Strong fit for both."},
+           {"label": "Strictness", "title": "OpenAI is stricter", "quote": "It put <u>171 of 254</u> Weak fit leads in No fit."},
+           {"label": "Consistency", "title": "OpenAI repeats itself", "quote": "<u>0%</u> of leads changed level between runs, vs <u>10%</u> for JEV."},
+           {"label": "Cost", "title": "JEV costs less", "quote": "<u>$0.034</u> per 1,000 leads, vs <u>$0.060</u> for OpenAI."}]}

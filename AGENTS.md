@@ -1,20 +1,10 @@
 # Agent instructions
 
-This repo compares the OpenAI Decisions API and Typesafe JEV on ICP lead scoring. When the user asks to compare the two models, or to benchmark lead scoring on their leads:
+This repo benchmarks two AI decision models, the OpenAI Decisions API and Typesafe JEV, on one job: scoring B2B leads against an ideal customer profile (`ICP.md`). The published results are in `README.md` and `report.md`. When the user asks to compare the two models, or to benchmark lead scoring on their own leads:
 
-1. Check that `.env` has `OPENAI_API_KEY` and `JEV_API_KEY`. If one is missing, tell the user how to get it from README.md and stop.
-2. Read `ICP.md`. If it still holds the example profile, ask the user for their own and rewrite the file first.
-3. Check that `data/leads.csv` holds the user's leads. If the user has an Evaboot export, save its JSON as `data/raw-<name>.json` and run `python3 build_leads.py`.
-4. Check that `data/labels.csv` has a correct level for each lead. If not, propose labels with the user's ICP, show them as a table, and let the user correct them. Never invent labels without showing them.
-5. Run `python3 benchmark.py --limit 10 --runs 1` and show the table from `report.md`.
-6. When the user agrees, run `python3 benchmark.py` and summarise: accuracy, how strict each model is, consistency between runs, speed and cost.
+1. Follow the skill in `skills/compare-models/SKILL.md` step by step.
+2. Show the user the labels before you use them, and run the 10-lead test before the full benchmark.
+3. Setup detail and the file list are in `docs/run-on-your-leads.md`.
+4. If the user wants n8n instead, follow `docs/n8n.md` with them one step at a time: you cannot click inside n8n, so say exactly what to do, wait for their confirmation, and check their sheet has the seven columns before the import.
 
-Never commit `.env` or `data/raw-*.json`.
-
-## If the user wants n8n instead
-
-Follow `docs/n8n.md` with the user, one step at a time. You cannot click inside n8n for them:
-tell them exactly what to do in each step, wait for them to confirm, and check their sheet
-has the seven columns before the import. Never ask the user to paste an API key into the chat;
-keys go into n8n credentials only.
-
+Confirm with the user before every call that saves, sends or changes anything, including a full benchmark run (it calls both paid APIs and overwrites `report.md` and `results.csv`). Never ask for or handle an API key in the chat: the user writes the keys into `.env`. Never commit `.env` or `data/raw-*.json`.
