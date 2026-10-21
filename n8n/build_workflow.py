@@ -77,7 +77,7 @@ OVERVIEW = """## Score a lead list with OpenAI and JEV side by side
 An OpenAI API key, a Typesafe JEV key (early access), a Google account.
 
 ### How to customize
-Change the four fit levels in both scoring nodes. For accuracy, speed, consistency and cost over several runs, use the Python benchmark: github.com/evaboot-labs/OpenAI-Decisions-vs-JEV"""
+Change the four fit levels in both scoring nodes. For accuracy, speed, consistency and cost over several runs, use the Python benchmark: github.com/evaboot-labs/openai-decisions-vs-jev"""
 
 nodes = [
     sticky("Template overview", [-760, -300], 520, 820, OVERVIEW),
