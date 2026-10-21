@@ -16,6 +16,26 @@ customer profile. Both get the same input, the same question and the same four f
 Built by [Evaboot](https://evaboot.com). The leads come from LinkedIn Sales Navigator,
 exported with Evaboot.
 
+## Set it up in one prompt
+
+Paste this into Claude Code, Codex or Cursor:
+
+```text
+Compare the OpenAI Decisions API and Typesafe JEV on my own leads.
+Clone https://github.com/evaboot-labs/OpenAI-Decisions-vs-JEV, read AGENTS.md and follow the
+compare-models skill. Ask me for my ideal customer profile and my lead list (an Evaboot
+export works), help me label a sample, and run a quick check before the full benchmark.
+```
+
+Prefer n8n? Follow [`docs/n8n.md`](docs/n8n.md), or paste this instead:
+
+```text
+Set up the OpenAI vs JEV lead scoring workflow in my n8n.
+Clone https://github.com/evaboot-labs/OpenAI-Decisions-vs-JEV and follow docs/n8n.md.
+Walk me through importing n8n/openai-vs-jev-lead-scoring.json, adding the Google Sheets,
+OpenAI and JEV credentials, and filling in my sheet URL and ICP, one step at a time.
+```
+
 ## Results (2026-10-20)
 
 998 leads, each scored 3 times by each model: 5,988 calls, 0 errors.
@@ -87,9 +107,9 @@ You need Python 3.9 or later. No packages to install.
 
 ## n8n template
 
-Import `n8n/openai-vs-jev-lead-scoring.json` in n8n. It reads a Google Sheet, sends each row
-to both models and writes OpenAI score, OpenAI fit, JEV score, JEV fit and Same level back to
-the row. The setup steps are on the sticky note inside the workflow.
+[`n8n/openai-vs-jev-lead-scoring.json`](n8n/openai-vs-jev-lead-scoring.json) reads a Google
+Sheet, sends each row to both models and writes OpenAI score, OpenAI fit, JEV score, JEV fit
+and Same level back to the row. Step-by-step setup: [`docs/n8n.md`](docs/n8n.md).
 
 ## With an AI agent
 

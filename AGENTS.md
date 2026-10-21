@@ -10,3 +10,11 @@ This repo compares the OpenAI Decisions API and Typesafe JEV on ICP lead scoring
 6. When the user agrees, run `python3 benchmark.py` and summarise: accuracy, how strict each model is, consistency between runs, speed and cost.
 
 Never commit `.env` or `data/raw-*.json`.
+
+## If the user wants n8n instead
+
+Follow `docs/n8n.md` with the user, one step at a time. You cannot click inside n8n for them:
+tell them exactly what to do in each step, wait for them to confirm, and check their sheet
+has the seven columns before the import. Never ask the user to paste an API key into the chat;
+keys go into n8n credentials only.
+
